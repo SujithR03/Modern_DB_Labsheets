@@ -1,0 +1,84 @@
+// TASK-1: Insert sample records into the collections
+
+// Insert records into the products collection
+db.products.insertMany([
+    { name: "Laptop", category: "Electronics", price: 1200, stock: 10, rating: 4.8 },
+    { name: "Smartphone", category: "Electronics", price: 800, stock: 25, rating: 4.6 }
+]);
+
+// Insert records into the customers collection
+db.customers.insertMany([
+    { name: "Alice Johnson", email: "alice@example.com", total_spent: 1500, loyalty_points: 150 },
+    { name: "Bob Smith", email: "bob@example.com", total_spent: 500, loyalty_points: 50 }
+]);
+
+// Insert records into the orders collection
+db.orders.insertMany([
+    { 
+        customer_id: db.customers.findOne({ name: "Alice Johnson" })._id, 
+        product_ids: [db.products.findOne({ name: "Laptop" })._id], 
+        total_amount: 1200, 
+        order_date: new Date("2023-09-01")
+    },
+    { 
+        customer_id: db.customers.findOne({ name: "Bob Smith" })._id, 
+        product_ids: [db.products.findOne({ name: "Smartphone" })._id], 
+        total_amount: 800, 
+        order_date: new Date("2023-09-02")
+    }
+]);
+
+// TASK-2: Use $match to find orders placed after September 1, 2023.
+db.orders.aggregate([
+    { $match: { order_date: { $gt: new Date("2023-09-01") } } }
+]).pretty();
+
+// TASK-3: Use $project to display only the name and price fields of all products.
+db.products.aggregate([
+    { $project: { _id: 0, name: 1, price: 1 } }
+]).pretty();
+
+// TASK-4: Use $group to calculate the total spending per customer.
+db.orders.aggregate([
+    { $group: { _id: "$customer_id", total_spent: { $sum: "$total_amount" } } }
+]).pretty();
+
+// TASK-5: Use $unwind to deconstruct the product_ids array in the orders collection.
+db.orders.aggregate([
+    { $unwind: "$product_ids" }
+]).pretty();
+
+// TASK-6: Combine $match and $group to calculate the total sales for products in the "Electronics" category.
+db.products.aggregate([
+    { $match: { category: "Electronics" } },
+    { $group: { _id: "$category", total_sales: { $sum: "$price" } } }
+]).pretty();
+
+// TASK-7: Use $project to rename the total_amount field to order_total in the orders collection.
+db.orders.aggregate([
+    { $project: { _id: 0, order_total: "$total_amount", order_date: 1 } }
+]).pretty();
+
+// TASK-8: Use $group to find the average rating of products in each category.
+db.products.aggregate([
+    { $group: { _id: "$category", avg_rating: { $avg: "$rating" } } }
+]).pretty();
+
+// TASK-9: Combine $match, $unwind, and $group to calculate the total number of products ordered by each customer.
+db.orders.aggregate([
+    { $unwind: "$product_ids" },
+    { $group: { _id: "$customer_id", total_products: { $sum: 1 } } }
+]).pretty();
+
+// TASK-10: Use $project to exclude the _id field and include only the name and stock fields of products with stock less than 20.
+db.products.aggregate([
+    { $match: { stock: { $lt: 20 } } },
+    { $project: { _id: 0, name: 1, stock: 1 } }
+]).pretty();
+
+// Challenge Task: Use the aggregation pipeline to find the top-spending customer and their total spending amount.
+db.orders.aggregate([
+    { $group: { _id: "$customer_id", total_spent: { $sum: "$total_amount" } } },
+    { $sort: { total_spent: -1 } },
+    { $limit: 1 }
+]).pretty();
