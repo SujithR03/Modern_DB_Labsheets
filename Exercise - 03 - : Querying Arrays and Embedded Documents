@@ -1,0 +1,74 @@
+// TASK-1 : Insert sample records into the collections.
+
+// Insert records into products
+db.products.insertMany([
+    {
+        name: "Laptop",
+        tags: ["Electronics", "Gaming"],
+        price: 1200,
+        details: {
+            weight: 2.5,
+            dimensions: { length: 14, width: 9.5, height: 0.7 }
+        }
+    },
+    {
+        name: "Smartphone",
+        tags: ["Electronics", "Mobile"],
+        price: 800,
+        details: {
+            weight: 0.5,
+            dimensions: { length: 6, width: 3, height: 0.3 }
+        }
+    }
+]);
+
+// Insert records into suppliers
+db.suppliers.insertMany([
+    {
+        name: "TechCorp",
+        contact: {
+            email: "techcorp@example.com",
+            phone: "1234567890"
+        },
+        products_supplied: [db.products.findOne({ name: "Laptop" })._id]
+    },
+    {
+        name: "AudioWorld",
+        contact: {
+            email: "audioworld@example.com",
+            phone: "9876543210"
+        },
+        products_supplied: [db.products.findOne({ name: "Smartphone" })._id]
+    }
+]);
+
+// TASK-2 : Find products with the tag "Electronics".
+db.products.find({ tags: "Electronics" }).pretty();
+
+// TASK-3 : Find products that have both "Electronics" and "Gaming" tags.
+db.products.find({ tags: { $all: ["Electronics", "Gaming"] } }).pretty();
+
+// TASK-4 : Find products with exactly two tags.
+db.products.find({ tags: { $size: 2 } }).pretty();
+
+// TASK-5 : Find products where the weight is greater than 1 kg.
+db.products.find({ "details.weight": { $gt: 1 } }).pretty();
+
+// TASK-6 : Find products with a length greater than 10 cm.
+db.products.find({ "details.dimensions.length": { $gt: 10 } }).pretty();
+
+// TASK-7 : Find suppliers who supply the product "Laptop".
+const laptopId = db.products.findOne({ name: "Laptop" })._id;
+db.suppliers.find({ products_supplied: laptopId }).pretty();
+
+// TASK-8 : Use $elemMatch to find products with tags containing "Electronics" and "Mobile".
+db.products.find({ tags: { $elemMatch: { $in: ["Electronics", "Mobile"] } } }).pretty();
+
+// TASK-9 : Project only the name and price fields of all products.
+db.products.find({}, { name: 1, price: 1, _id: 0 }).pretty();
+
+// TASK-10 : Add a new tag "Popular" to products priced above $500.
+db.products.updateMany(
+    { price: { $gt: 500 } },
+    { $push: { tags: "Popular" } }
+);
