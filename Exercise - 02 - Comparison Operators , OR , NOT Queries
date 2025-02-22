@@ -1,0 +1,129 @@
+// TASK-1 : Insert sample records into the collections.
+
+// Insert records into products
+db.products.insertMany([
+    {
+        name: "Laptop",
+        category: "Electronics",
+        price: 1200,
+        stock: 10,
+        rating: 4.8
+    },
+    {
+        name: "Smartphone",
+        category: "Electronics",
+        price: 800,
+        stock: 25,
+        rating: 4.6
+    },
+    {
+        name: "Headphones",
+        category: "Accessories",
+        price: 150,
+        stock: 50,
+        rating: 4.5
+    },
+    {
+        name: "Desk Chair",
+        category: "Furniture",
+        price: 200,
+        stock: 5,
+        rating: 4.2
+    },
+    {
+        name: "Coffee Mug",
+        category: "Kitchenware",
+        price: 10,
+        stock: 100,
+        rating: 4.7
+    }
+]);
+
+// Insert records into customers
+db.customers.insertMany([
+    {
+        name: "Alice Johnson",
+        email: "alice@example.com",
+        total_spent: 1500,
+        loyalty_points: 150
+    },
+    {
+        name: "Bob Smith",
+        email: "bob@example.com",
+        total_spent: 500,
+        loyalty_points: 50
+    },
+    {
+        name: "Charlie Brown",
+        email: "charlie@example.com",
+        total_spent: 3000,
+        loyalty_points: 300
+    },
+    {
+        name: "Diana Prince",
+        email: "diana@example.com",
+        total_spent: 200,
+        loyalty_points: 20
+    },
+    {
+        name: "Ethan Hunt",
+        email: "ethan@example.com",
+        total_spent: 1000,
+        loyalty_points: 100
+    }
+]);
+
+// Insert records into orders
+db.orders.insertMany([
+    {
+        customer_id: db.customers.findOne({ name: "Alice Johnson" })._id,
+        product_ids: [db.products.findOne({ name: "Laptop" })._id],
+        total_amount: 1200,
+        order_date: new Date("2023-09-01")
+    },
+    {
+        customer_id: db.customers.findOne({ name: "Bob Smith" })._id,
+        product_ids: [db.products.findOne({ name: "Smartphone" })._id],
+        total_amount: 800,
+        order_date: new Date("2023-09-02")
+    }
+]);
+
+// TASK-2 : Find products priced above $500.
+db.products.find({ price: { $gt: 500 } }).pretty();
+
+// TASK-3 : Find customers with loyalty points below 100.
+db.customers.find({ loyalty_points: { $lt: 100 } }).pretty();
+
+// TASK-4 : Find products in the "Electronics" category.
+db.products.find({ category: { $eq: "Electronics" } }).pretty();
+
+// TASK-5 : Find products not in the "Electronics" category.
+db.products.find({ category: { $ne: "Electronics" } }).pretty();
+
+// TASK-6 : Find products priced between $100 and $500.
+db.products.find({ price: { $gt: 100, $lt: 500 } }).pretty();
+
+// TASK-7 : Find customers who spent more than $1000 or have over 200 loyalty points.
+db.customers.find({
+    $or: [
+        { total_spent: { $gt: 1000 } },
+        { loyalty_points: { $gt: 200 } }
+    ]
+}).pretty();
+
+// TASK-8 : Find customers who did not spend more than $500.
+db.customers.find({ total_spent: { $not: { $gt: 500 } } }).pretty();
+
+// TASK-9 : Find orders placed after September 1, 2023.
+db.orders.find({ order_date: { $gt: new Date("2023-09-01") } }).pretty();
+
+// TASK-10 : Find products with stock less than 10 and a rating above 4.5.
+db.products.find({ stock: { $lt: 10 }, rating: { $gt: 4.5 } }).pretty();
+
+// Challenge Task : Find products priced above $200, with a rating above 4.5, and stock less than 20.
+db.products.find({
+    price: { $gt: 200 },
+    rating: { $gt: 4.5 },
+    stock: { $lt: 20 }
+}).pretty();
