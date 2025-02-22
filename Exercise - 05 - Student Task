@@ -1,0 +1,62 @@
+// TASK-1 : Insert sample records into the collections.
+
+// Insert records into the products collection
+db.products.insertMany([
+    { name: "Laptop", category: "Electronics", price: 1200, stock: 10, rating: 4.8 },
+    { name: "Smartphone", category: "Electronics", price: 800, stock: 25, rating: 4.6 },
+    { name: "Desk Chair", category: "Furniture", price: 200, stock: 5, rating: 4.2 }
+]);
+
+// Insert records into the customers collection
+db.customers.insertMany([
+    { name: "Alice Johnson", email: "alice@example.com", total_spent: 1500, loyalty_points: 150 },
+    { name: "Bob Smith", email: "bob@example.com", total_spent: 500, loyalty_points: 50 }
+]);
+
+// TASK-2 : Create a single-field index on the price field in the products collection.
+db.products.createIndex({ price: 1 });
+
+// TASK-3 : Create a compound index on the category and price fields in the products collection.
+db.products.createIndex({ category: 1, price: -1 });
+
+// TASK-4 : Create a unique index on the email field in the customers collection.
+db.customers.createIndex({ email: 1 }, { unique: true });
+
+// TASK-5 : Create a sparse index on the loyalty_points field in the customers collection.
+db.customers.createIndex({ loyalty_points: 1 }, { sparse: true });
+
+// TASK-6 : Use explain() to analyze the performance of a query on the price field.
+db.products.find({ price: { $gt: 500 } }).explain("executionStats");
+
+// TASK-7 : Drop the index on the price field in the products collection.
+db.products.dropIndex("price_1");
+
+// TASK-8 : Find all indexes in the products collection.
+db.products.getIndexes();
+
+// TASK-9 : Create a compound index on the order_date and total_amount fields in the orders collection.
+db.orders.createIndex({ order_date: 1, total_amount: -1 });
+
+// TASK-10 : Use explain() to compare the performance of a query before and after creating an index on the order_date field in the orders collection.
+
+// Before creating the index
+db.orders.find({ order_date: { $gt: new Date("2023-09-01") } }).explain("executionStats");
+
+// Create the index
+db.orders.createIndex({ order_date: 1 });
+
+// After creating the index
+db.orders.find({ order_date: { $gt: new Date("2023-09-01") } }).explain("executionStats");
+
+// Challenge Task : Create a unique sparse index on the total_spent field in the customers collection 
+// and explain its behavior when inserting a document without the total_spent field.
+
+// Create the unique sparse index
+db.customers.createIndex({ total_spent: 1 }, { unique: true, sparse: true });
+
+// Insert a document without the `total_spent` field
+db.customers.insertOne({ name: "Charlie Brown", email: "charlie@example.com", loyalty_points: 300 });
+
+// Explanation: 
+// - The unique sparse index ensures that values in `total_spent` are unique but ignores documents that do not contain this field.
+// - Since the new document lacks `total_spent`, it is inserted successfully.
