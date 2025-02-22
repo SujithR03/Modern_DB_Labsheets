@@ -1,0 +1,78 @@
+// TASK-1 : Insert sample records into the collections.
+
+// Insert records into books
+db.books.insertMany([
+    {
+        title: "MongoDB Basics",
+        author: "John Doe",
+        genre: "Tech",
+        year_published: 2020,
+        copies_available: 5
+    },
+    {
+        title: "The Art of War",
+        author: "Sun Tzu",
+        genre: "Philosophy",
+        year_published: 500,
+        copies_available: 3
+    }
+]);
+
+// Insert records into authors
+db.authors.insertMany([
+    {
+        name: "John Doe",
+        nationality: "American",
+        birth_year: 1980
+    },
+    {
+        name: "Sun Tzu",
+        nationality: "Chinese",
+        birth_year: 544
+    }
+]);
+
+// TASK-2 : Find all books in the "Tech" genre.
+db.books.find({ genre: "Tech" }).pretty();
+
+// TASK-3 : Find the book titled "The Art of War".
+db.books.find({ title: "The Art of War" }).pretty();
+
+// TASK-4 : Update the number of copies available for "MongoDB Basics" to 10.
+db.books.updateOne(
+    { title: "MongoDB Basics" },
+    { $set: { copies_available: 10 } }
+);
+
+// TASK-5 : Add a new field rating with a value of 4.5 to the book "The Art of War".
+db.books.updateOne(
+    { title: "The Art of War" },
+    { $set: { rating: 4.5 } }
+);
+
+// TASK-6 : Delete the author "Sun Tzu" from the authors collection.
+db.authors.deleteOne({ name: "Sun Tzu" });
+
+// TASK-7 : Find all books published before the year 1000.
+db.books.find({ year_published: { $lt: 1000 } }).pretty();
+
+// TASK-8 : Use $inc to decrease the copies_available of "MongoDB Basics" by 2.
+db.books.updateOne(
+    { title: "MongoDB Basics" },
+    { $inc: { copies_available: -2 } }
+);
+
+// TASK-9 : Drop the authors collection.
+db.authors.drop();
+
+// TASK-10 : Insert a new book into the books collection.
+db.books.insertOne({
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    genre: "Tech",
+    year_published: 2008,
+    copies_available: 8
+});
+
+// Challenge Task : Use find() and sort() to list all books sorted by year_published in descending order.
+db.books.find().sort({ year_published: -1 }).pretty();
