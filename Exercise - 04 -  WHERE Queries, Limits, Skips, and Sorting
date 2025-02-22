@@ -1,0 +1,50 @@
+// TASK-1 : Insert sample records into the collections.
+
+// Insert records into products
+db.products.insertMany([
+    { name: "Laptop", category: "Electronics", price: 1200, stock: 10, rating: 4.8 },
+    { name: "Smartphone", category: "Electronics", price: 800, stock: 25, rating: 4.6 },
+    { name: "Headphones", category: "Accessories", price: 150, stock: 50, rating: 4.5 },
+    { name: "Desk Chair", category: "Furniture", price: 200, stock: 5, rating: 4.2 },
+    { name: "Coffee Mug", category: "Kitchenware", price: 10, stock: 100, rating: 4.7 }
+]);
+
+// Insert records into customers
+db.customers.insertMany([
+    { name: "Alice Johnson", email: "alice@example.com", total_spent: 1500, loyalty_points: 150 },
+    { name: "Bob Smith", email: "bob@example.com", total_spent: 500, loyalty_points: 50 },
+    { name: "Charlie Brown", email: "charlie@example.com", total_spent: 3000, loyalty_points: 300 },
+    { name: "Diana Prince", email: "diana@example.com", total_spent: 200, loyalty_points: 20 },
+    { name: "Ethan Hunt", email: "ethan@example.com", total_spent: 1000, loyalty_points: 100 }
+]);
+
+// TASK-2 : Find products where the price is greater than $500 using $where.
+db.products.find({ $where: "this.price > 500" }).pretty();
+
+// TASK-3 : Limit the query results to only 2 products.
+db.products.find().limit(2).pretty();
+
+// TASK-4 : Skip the first product and return the next 2 products.
+db.products.find().skip(1).limit(2).pretty();
+
+// TASK-5 : Sort products by price in ascending order.
+db.products.find().sort({ price: 1 }).pretty();
+
+// TASK-6 : Sort products by rating in descending order.
+db.products.find().sort({ rating: -1 }).pretty();
+
+// TASK-7 : Sort customers by total spending in descending order and limit the results to the top spender.
+db.customers.find().sort({ total_spent: -1 }).limit(1).pretty();
+
+// TASK-8 : Use $where to find products with a stock value less than 10.
+db.products.find({ $where: "this.stock < 10" }).pretty();
+
+// TASK-9 : Implement pagination for products, showing 2 products per page, sorted by price.
+// Example for page 2 (skip 2 products)
+db.products.find().sort({ price: 1 }).skip(2).limit(2).pretty();
+
+// TASK-10 : Delete all products with no stock available.
+db.products.deleteMany({ stock: { $eq: 0 } });
+
+// Challenge Task : Find customers who spent more than $500, sort them by loyalty points, and limit the results to 1.
+db.customers.find({ total_spent: { $gt: 500 } }).sort({ loyalty_points: -1 }).limit(1).pretty();
