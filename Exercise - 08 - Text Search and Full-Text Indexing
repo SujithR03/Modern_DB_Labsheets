@@ -1,0 +1,47 @@
+db.books.insertMany([
+    {
+        title: "MongoDB Basics", 
+        author: "John Doe", 
+        genre: "Tech", 
+        description: "A comprehensive guide to MongoDB fundamentals."
+    },
+    {
+        title: "The Art of War", 
+        author: "Sun Tzu", 
+        genre: "Philosophy", 
+        description: "Ancient strategies for modern success."
+    }
+]);
+
+db.authors.insertMany([
+    { name: "John Doe", bio: "An expert in database technologies." },
+    { name: "Sun Tzu", bio: "An ancient Chinese military strategist." }
+]);
+
+db.books.createIndex({ description: "text" });
+db.books.getIndexes();
+
+db.books.find({ $text: { $search: "guide" } }).pretty();
+
+db.books.find({ $text: { $search: "\"modern success\"" } }).pretty();
+
+db.books.find({ $text: { $search: "success -ancient" } }).pretty();
+
+db.books.find(
+    { $text: { $search: "MongoDB" } },
+    { score: { $meta: "textScore" } }
+).sort({ score: { $meta: "textScore" } }).pretty();
+
+db.books.createIndex({ title: "text", author: "text" });
+
+db.books.find({ $text: { $search: "John" } }).pretty();
+
+db.authors.createIndex({ bio: "text" });
+db.authors.find({ $text: { $search: "database" } }).pretty();
+
+db.books.find({ $text: { $search: "guide" }, genre: "Tech" }).pretty();
+
+db.books.find(
+    { $text: { $search: "MongoDB" } },
+    { title: 1, score: { $meta: "textScore" } }
+).sort({ score: { $meta: "textScore" } }).limit(1).pretty();
