@@ -1,0 +1,99 @@
+db.places.insertMany([
+    {
+        name: "Central Park",
+        location: { type: "Point", coordinates: [-73.9712, 40.7831] }
+    },
+    {
+        name: "Empire State Building",
+        location: { type: "Point", coordinates: [-73.9857, 40.7484] }
+    },
+    {
+        name: "Statue of Liberty",
+        location: { type: "Point", coordinates: [-74.0445, 40.6892] }
+    }
+]);
+
+db.users.insertMany([
+    {
+        name: "Alice",
+        last_location: { type: "Point", coordinates: [-73.9924, 40.7500] }
+    },
+    {
+        name: "Bob",
+        last_location: { type: "Point", coordinates: [-73.9750, 40.7600] }
+    }
+]);
+
+db.places.createIndex({ location: "2dsphere" });
+db.places.getIndexes();
+
+db.places.find({
+    location: {
+        $near: {
+            $geometry: {
+                type: "Point",
+                coordinates: [-73.9924, 40.7500]
+            }
+        }
+    }
+}).pretty();
+
+db.places.find({
+    location: {
+        $geoWithin: {
+            $centerSphere: [[-73.9924, 40.7500], 2 / 6378.1] // Radius in radians (2 km)
+        }
+    }
+}).pretty();
+
+db.users.createIndex({ last_location: "2dsphere" });
+
+db.users.find({
+    last_location: {
+        $geoWithin: {
+            $box: [
+                [-73.9812, 40.7681], // Bottom-left corner
+                [-73.9612, 40.8031]  // Top-right corner
+            ]
+        }
+    }
+}).pretty();
+
+db.places.find({
+    location: {
+        $geoIntersects: {
+            $geometry: {
+                type: "Polygon",
+                coordinates: [[
+                    [-73.9900, 40.7500],
+                    [-73.9800, 40.7500],
+                    [-73.9800, 40.7600],
+                    [-73.9900, 40.7600],
+                    [-73.9900, 40.7500]
+                ]]
+            }
+        }
+    }
+}).pretty();
+
+db.places.find({
+    location: {
+        $near: {
+            $geometry: {
+                type: "Point",
+                coordinates: [-73.9924, 40.7500]
+            }
+        }
+    },
+    name: "Central Park"
+}).pretty();
+
+db.places.dropIndex("location_2dsphere");
+
+db.places.find({
+    location: {
+        $geoWithin: {
+            $centerSphere: [[-73.9750, 40.7600], 3 / 6378.1] // Radius in radians (3 km)
+        }
+    }
+}).pretty();
