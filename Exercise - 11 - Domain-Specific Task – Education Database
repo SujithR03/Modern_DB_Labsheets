@@ -1,0 +1,116 @@
+// TASK-1: Insert sample records into the collections
+
+db.students.insertMany([
+    {name: "Alice Johnson", email: "alice@example.com", age: 20, major: "Computer Science"},
+    {name: "Bob Smith", email: "bob@example.com", age: 22, major: "Mathematics"}
+]);
+
+db.courses.insertMany([
+    {course_name: "Introduction to Programming", instructor: "Dr. Jane Doe", credits: 3},
+    {course_name: "Calculus I", instructor: "Dr. John Smith", credits: 4}
+]);
+
+db.enrollments.insertMany([
+    {
+        student_id: db.students.findOne({name: "Alice Johnson"})._id,
+        course_id: db.courses.findOne({course_name: "Introduction to Programming"})._id,
+        grade: "A",
+        enrollment_date: new Date("2023-09-01")
+    },
+    {
+        student_id: db.students.findOne({name: "Bob Smith"})._id,
+        course_id: db.courses.findOne({course_name: "Calculus I"})._id,
+        grade: "B",
+        enrollment_date: new Date("2023-09-02")
+    }
+]);
+
+// TASK-2: Find all students majoring in "Computer Science"
+db.students.find({major: "Computer Science"}).pretty();
+
+// TASK-3: List all courses taught by "Dr. Jane Doe"
+db.courses.find({instructor: "Dr. Jane Doe"}).pretty();
+
+// TASK-4: Find the enrollment details of "Alice Johnson"
+const aliceId = db.students.findOne({name: "Alice Johnson"})._id;
+db.enrollments.find({student_id: aliceId}).pretty();
+
+// TASK-5: Update the grade of "Bob Smith" in "Calculus I" to "A"
+const bobId = db.students.findOne({name: "Bob Smith"})._id;
+const calculusId = db.courses.findOne({course_name: "Calculus I"})._id;
+db.enrollments.updateOne(
+    {student_id: bobId, course_id: calculusId},
+    {$set: {grade: "A"}}
+);
+
+// TASK-6: Calculate the total number of credits each student is enrolled in
+db.enrollments.aggregate([
+    {
+        $lookup: {
+            from: "courses",
+            localField: "course_id",
+            foreignField: "_id",
+            as: "course_details"
+        }
+    },
+    {
+        $group: {
+            _id: "$student_id",
+            total_credits: {$sum: {$arrayElemAt: ["$course_details.credits", 0]}}
+        }
+    }
+]).pretty();
+
+// TASK-7: Find the average grade of students in "Introduction to Programming"
+const programmingId = db.courses.findOne({course_name: "Introduction to Programming"})._id;
+db.enrollments.aggregate([
+    {$match: {course_id: programmingId}},
+    {$group: {_id: null, avg_grade: {$avg: "$grade"}}}
+]).pretty();
+
+// TASK-8: Delete all enrollments older than September 1, 2023
+db.enrollments.deleteMany({enrollment_date: {$lt: new Date("2023-09-01")}});
+
+// TASK-9: Use $lookup to join enrollments with students and display student names along with their grades
+db.enrollments.aggregate([
+    {
+        $lookup: {
+            from: "students",
+            localField: "student_id",
+            foreignField: "_id",
+            as: "student_details"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            student_name: {$arrayElemAt: ["$student_details.name", 0]},
+            grade: 1
+        }
+    }
+]).pretty();
+
+// TASK-10: Create an index on the course_name field in the courses collection
+db.courses.createIndex({course_name: 1});
+
+// Challenge Task: Use aggregation to find the most popular course (highest number of enrollments)
+db.enrollments.aggregate([
+    {$group: {_id: "$course_id", enrollment_count: {$sum: 1}}},
+    {$sort: {enrollment_count: -1}},
+    {$limit: 1},
+    {
+        $lookup: {
+            from: "courses",
+            localField: "_id",
+            foreignField: "_id",
+            as: "course_details"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            course_name: {$arrayElemAt: ["$course_details.course_name", 0]},
+            enrollment_count: 1
+        }
+    }
+]).pretty();
