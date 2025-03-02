@@ -1,0 +1,168 @@
+// ❖ TASK-1 : Insert sample records into the collections.
+
+// Insert records into products
+db.products.insertMany([
+    {
+        name: "Laptop",
+        category: "Electronics",
+        price: 1200,
+        stock: 10,
+        rating: 4.8
+    },
+    {
+        name: "Smartphone",
+        category: "Electronics",
+        price: 800,
+        stock: 25,
+        rating: 4.6
+    }
+]);
+
+// Insert records into customers
+db.customers.insertMany([
+    {
+        name: "Alice Johnson",
+        email: "alice@example.com",
+        total_spent: 1500,
+        loyalty_points: 150
+    },
+    {
+        name: "Bob Smith",
+        email: "bob@example.com",
+        total_spent: 500,
+        loyalty_points: 50
+    }
+]);
+
+// Insert records into orders
+db.orders.insertMany([
+    {
+        customer_id: db.customers.findOne({name: "Alice Johnson"})._id,
+        product_ids: [db.products.findOne({name: "Laptop"})._id],
+        total_amount: 1200,
+        order_date: new Date("2023-09-01")
+    },
+    {
+        customer_id: db.customers.findOne({name: "Bob Smith"})._id,
+        product_ids: [db.products.findOne({name: "Smartphone"})._id],
+        total_amount: 800,
+        order_date: new Date("2023-09-02")
+    }
+]);
+
+// Insert records into reviews
+db.reviews.insertMany([
+    {
+        product_id: db.products.findOne({name: "Laptop"})._id,
+        customer_id: db.customers.findOne({name: "Alice Johnson"})._id,
+        rating: 5,
+        review_text: "Great product!",
+        review_date: new Date("2023-09-03")
+    },
+    {
+        product_id: db.products.findOne({name: "Smartphone"})._id,
+        customer_id: db.customers.findOne({name: "Bob Smith"})._id,
+        rating: 4,
+        review_text: "Good phone, but battery life could be better.",
+        review_date: new Date("2023-09-04")
+    }
+]);
+
+// ❖ TASK-2 : Find all products in the "Electronics" category.
+db.products.find({category: "Electronics"}).pretty();
+
+// ❖ TASK-3 : List all orders placed by "Alice Johnson".
+const aliceId = db.customers.findOne({name: "Alice Johnson"})._id;
+db.orders.find({customer_id: aliceId}).pretty();
+
+// ❖ TASK-4 : Update the stock of the product "Laptop" to 5.
+db.products.updateOne(
+    {name: "Laptop"},
+    {$set: {stock: 5}}
+);
+
+// ❖ TASK-5 : Calculate the total revenue generated from all orders.
+db.orders.aggregate([
+    {
+        $group: {
+            _id: null,
+            total_revenue: {$sum: "$total_amount"}
+        }
+    }
+]).pretty();
+
+// ❖ TASK-6 : Find all reviews with a rating greater than 4.
+db.reviews.find({rating: {$gt: 4}}).pretty();
+
+// ❖ TASK-7 : Use $lookup to join orders with customers and display customer names along with their orders.
+db.orders.aggregate([
+    {
+        $lookup: {
+            from: "customers",
+            localField: "customer_id",
+            foreignField: "_id",
+            as: "customer_details"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            customer_name: {$arrayElemAt: ["$customer_details.name", 0]},
+            total_amount: 1,
+            order_date: 1
+        }
+    }
+]).pretty();
+
+// ❖ TASK-8 : Find the average rating of the product "Smartphone".
+const smartphoneId = db.products.findOne({name: "Smartphone"})._id;
+db.reviews.aggregate([
+    {
+        $match: {product_id: smartphoneId}
+    },
+    {
+        $group: {
+            _id: null,
+            avg_rating: {$avg: "$rating"}
+        }
+    }
+]).pretty();
+
+// ❖ TASK-9 : Delete all orders older than September 1, 2023.
+db.orders.deleteMany({
+    order_date: {$lt: new Date("2023-09-01")}
+});
+
+// ❖ TASK-10 : Create an index on the review_date field in the reviews collection.
+db.reviews.createIndex({review_date: 1});
+
+// ❖ Challenge Task : Use aggregation to find the top-rated product (the product with the highest average rating).
+db.reviews.aggregate([
+    {
+        $group: {
+            _id: "$product_id",
+            avg_rating: {$avg: "$rating"}
+        }
+    },
+    {
+        $sort: {avg_rating: -1}
+    },
+    {
+        $limit: 1
+    },
+    {
+        $lookup: {
+            from: "products",
+            localField: "_id",
+            foreignField: "_id",
+            as: "product_details"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            product_name: {$arrayElemAt: ["$product_details.name", 0]},
+            avg_rating: 1
+        }
+    }
+]).pretty();
