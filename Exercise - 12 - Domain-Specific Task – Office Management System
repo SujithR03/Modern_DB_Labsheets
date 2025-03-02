@@ -1,0 +1,108 @@
+// ❖ TASK-1 : Insert sample records into the collections.
+
+// Insert records into employees
+db.employees.insertMany([
+    {
+        name: "Alice Johnson",
+        email: "alice@example.com",
+        department: "HR",
+        role: "Manager",
+        hire_date: new Date("2020-06-15")
+    },
+    {
+        name: "Bob Smith",
+        email: "bob@example.com",
+        department: "IT",
+        role: "Developer",
+        hire_date: new Date("2021-08-20")
+    }
+]);
+
+// Insert records into departments
+db.departments.insertMany([
+    {
+        department_name: "HR",
+        manager_id: db.employees.findOne({name: "Alice Johnson"})._id
+    },
+    {
+        department_name: "IT",
+        manager_id: db.employees.findOne({name: "Bob Smith"})._id
+    }
+]);
+
+// Insert records into tasks
+db.tasks.insertMany([
+    {
+        task_name: "Onboard New Employees",
+        assigned_to: db.employees.findOne({name: "Alice Johnson"})._id,
+        status: "Completed",
+        due_date: new Date("2023-09-10")
+    },
+    {
+        task_name: "Develop New Feature",
+        assigned_to: db.employees.findOne({name: "Bob Smith"})._id,
+        status: "In Progress",
+        due_date: new Date("2023-09-25")
+    }
+]);
+
+// ❖ TASK-2 : Find all employees in the "IT" department.
+db.employees.find({department: "IT"}).pretty();
+
+// ❖ TASK-3 : List all tasks assigned to "Bob Smith".
+const bobId = db.employees.findOne({name: "Bob Smith"})._id;
+db.tasks.find({assigned_to: bobId}).pretty();
+
+// ❖ TASK-4 : Update the status of the task "Develop New Feature" to "Completed".
+db.tasks.updateOne(
+    {task_name: "Develop New Feature"},
+    {$set: {status: "Completed"}}
+);
+
+// ❖ TASK-5 : Calculate the total number of tasks assigned to each employee.
+db.tasks.aggregate([
+    {
+        $group: {
+            _id: "$assigned_to",
+            total_tasks: {$sum: 1}
+        }
+    }
+]).pretty();
+
+// ❖ TASK-6 : Find all overdue tasks (tasks with a due_date earlier than today).
+db.tasks.find({
+    due_date: {$lt: new Date()}
+}).pretty();
+
+// ❖ TASK-7 : Use $lookup to join tasks with employees and display employee names along with their tasks.
+db.tasks.aggregate([
+    {
+        $lookup: {
+            from: "employees",
+            localField: "assigned_to",
+            foreignField: "_id",
+            as: "employee_details"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            task_name: 1,
+            employee_name: {$arrayElemAt: ["$employee_details.name", 0]},
+            status: 1
+        }
+    }
+]).pretty();
+
+// ❖ TASK-8 : Find the department managed by "Alice Johnson".
+const aliceId = db.employees.findOne({name: "Alice Johnson"})._id;
+db.departments.find({manager_id: aliceId}).pretty();
+
+// ❖ TASK-9 : Delete all completed tasks older than September 1, 2023.
+db.tasks.deleteMany({
+    status: "Completed",
+    due_date: {$lt: new Date("2023-09-01")}
+});
+
+// ❖ TASK-10 : Create an index on the status field in the tasks collection.
+db.tasks.createIndex({status: 1});
