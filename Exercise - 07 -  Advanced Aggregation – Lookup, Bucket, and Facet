@@ -1,0 +1,211 @@
+db.products.insertMany([
+    { name: "Laptop", category: "Electronics", price: 1200, stock: 10, rating: 4.8 },
+    { name: "Smartphone", category: "Electronics", price: 800, stock: 25, rating: 4.6 }
+]);
+
+db.customers.insertMany([
+    { name: "Alice Johnson", email: "alice@example.com", total_spent: 1500, loyalty_points: 150 },
+    { name: "Bob Smith", email: "bob@example.com", total_spent: 500, loyalty_points: 50 }
+]);
+
+db.orders.insertMany([
+    { 
+        customer_id: db.customers.findOne({ name: "Alice Johnson" })._id, 
+        product_ids: [db.products.findOne({ name: "Laptop" })._id], 
+        total_amount: 1200, 
+        order_date: new Date("2023-09-01") 
+    },
+    { 
+        customer_id: db.customers.findOne({ name: "Bob Smith" })._id, 
+        product_ids: [db.products.findOne({ name: "Smartphone" })._id], 
+        total_amount: 800, 
+        order_date: new Date("2023-09-02") 
+    }
+]);
+
+db.orders.aggregate([
+    {
+        $lookup: {
+            from: "customers",
+            localField: "customer_id",
+            foreignField: "_id",
+            as: "customer_details"
+        }
+    }
+]).pretty();
+
+db.products.aggregate([
+    {
+        $bucket: {
+            groupBy: "$price",
+            boundaries: [0, 500, 1000, Infinity],
+            output: {
+                count: { $sum: 1 },
+                products: { $push: "$name" }
+            }
+        }
+    }
+]).pretty();
+
+db.orders.aggregate([
+    {
+        $facet: {
+            total_spending_per_customer: [
+                { $group: { _id: "$customer_id", total_spent: { $sum: "$total_amount" } } }
+            ],
+            average_order_amount: [
+                { $group: { _id: null, avg_amount: { $avg: "$total_amount" } } }
+            ]
+        }
+    }
+]).pretty();
+
+db.orders.aggregate([
+    {
+        $lookup: {
+            from: "customers",
+            localField: "customer_id",
+            foreignField: "_id",
+            as: "customer_details"
+        }
+    },
+    {
+        $bucket: {
+            groupBy: "$total_amount",
+            boundaries: [0, 500, 1000, Infinity],
+            output: {
+                count: { $sum: 1 },
+                orders: { $push: { order_id: "$_id", customer: { $arrayElemAt: ["$customer_details.name", 0] } } }
+            }
+        }
+    }
+]).pretty();
+
+db.products.aggregate([
+    {
+        $facet: {
+            rating_analysis: [
+                { $group: { _id: "$rating", count: { $sum: 1 } } }
+            ],
+            stock_analysis: [
+                {
+                    $bucket: {
+                        groupBy: "$stock",
+                        boundaries: [0, 10, 20, Infinity],
+                        output: {
+                            count: { $sum: 1 },
+                            products: { $push: "$name" }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]).pretty();
+
+const customerId = db.customers.findOne({ name: "Alice Johnson" })._id;
+db.orders.aggregate([
+    { $match: { customer_id: customerId } },
+    { $unwind: "$product_ids" },
+    {
+        $lookup: {
+            from: "products",
+            localField: "product_ids",
+            foreignField: "_id",
+            as: "product_details"
+        }
+    },
+    { $project: { _id: 0, product_name: { $arrayElemAt: ["$product_details.name", 0] } } }
+]).pretty();
+
+db.customers.aggregate([
+    {
+        $bucket: {
+            groupBy: "$total_spent",
+            boundaries: [0, 500, 1000, Infinity],
+            output: {
+                count: { $sum: 1 },
+                customers: { $push: "$name" }
+            }
+        }
+    }
+]).pretty();
+
+db.orders.aggregate([
+    {
+        $facet: {
+            total_orders: [ { $count: "total" } ],
+            highest_order_amount: [ { $sort: { total_amount: -1 } }, { $limit: 1 } ]
+        }
+    }
+]).pretty();
+
+db.orders.aggregate([
+    {
+        $lookup: {
+            from: "customers",
+            localField: "customer_id",
+            foreignField: "_id",
+            as: "customer_details"
+        }
+    },
+    { $unwind: "$product_ids" },
+    {
+        $lookup: {
+            from: "products",
+            localField: "product_ids",
+            foreignField: "_id",
+            as: "product_details"
+        }
+    },
+    {
+        $facet: {
+            spending_buckets: [
+                {
+                    $bucket: {
+                        groupBy: "$total_amount",
+                        boundaries: [0, 500, 1000, Infinity],
+                        output: {
+                            count: { $sum: 1 },
+                            customers: { $push: { $arrayElemAt: ["$customer_details.name", 0] } }
+                        }
+                    }
+                }
+            ],
+            product_categories: [
+                { $group: { _id: { $arrayElemAt: ["$product_details.category", 0] }, count: { $sum: 1 } } }
+            ]
+        }
+    }
+]).pretty();
+
+db.customers.aggregate([
+    {
+        $facet: {
+            loyalty_analysis: [
+                {
+                    $bucket: {
+                        groupBy: "$loyalty_points",
+                        boundaries: [0, 50, 100, Infinity],
+                        output: {
+                            count: { $sum: 1 },
+                            customers: { $push: "$name" }
+                        }
+                    }
+                }
+            ],
+            spending_analysis: [
+                {
+                    $bucket: {
+                        groupBy: "$total_spent",
+                        boundaries: [0, 500, 1000, Infinity],
+                        output: {
+                            count: { $sum: 1 },
+                            customers: { $push: "$name" }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]).pretty();
