@@ -1,0 +1,51 @@
+❖ TASK-1 : Insert sample records into the collections.
+db.products.insertMany([
+    {name: "Laptop", category: "Electronics", price: 1200, stock: 10, rating: 4.8},
+    {name: "Smartphone", category: "Electronics", price: 800, stock: 25, rating: 4.6}
+]);
+
+db.customers.insertMany([
+    {name: "Alice Johnson", email: "alice@example.com", total_spent: 1500, loyalty_points: 150},
+    {name: "Bob Smith", email: "bob@example.com", total_spent: 500, loyalty_points: 50}
+]);
+
+db.orders.insertMany([
+    {customer_id: db.customers.findOne({name: "Alice Johnson"})._id, product_ids: [db.products.findOne({name: "Laptop"})._id], total_amount: 1200, order_date: new Date("2023-09-01")},
+    {customer_id: db.customers.findOne({name: "Bob Smith"})._id, product_ids: [db.products.findOne({name: "Smartphone"})._id], total_amount: 800, order_date: new Date("2023-09-02")}
+]);
+
+❖ TASK-2 : Use mongodump to create a backup of the ecommerce_db database.
+mongodump --db ecommerce_db --out /path/to/backup/
+
+❖ TASK-3 : Drop the ecommerce_db database to simulate data loss.
+use ecommerce_db;
+db.dropDatabase();
+
+❖ TASK-4 : Use mongorestore to restore the ecommerce_db database from the backup.
+mongorestore --db ecommerce_db /path/to/backup/ecommerce_db/
+
+❖ TASK-5 : Create an index on the price field in the products collection.
+db.products.createIndex({price: 1});
+
+❖ TASK-6 : Use explain() to analyze the performance of a query on the price field.
+db.products.find({price: {$gt: 500}}).explain("executionStats");
+
+❖ TASK-7 : Optimize a query by adding a compound index on category and price.
+db.products.createIndex({category: 1, price: -1});
+
+❖ TASK-8 : Compare query performance before and after adding the compound index.
+// Before adding the compound index
+db.products.find({category: "Electronics", price: {$gt: 500}}).explain("executionStats");
+
+// After adding the compound index
+db.products.find({category: "Electronics", price: {$gt: 500}}).explain("executionStats");
+
+❖ TASK-9 : Use hint() to force MongoDB to use a specific index for a query.
+db.products.find({price: {$gt: 500}}).hint({price: 1}).explain("executionStats");
+
+❖ TASK-10 : Remove unused indexes to improve write performance.
+db.products.dropIndex("price_1");
+
+❖ Challenge Task : Use mongostat or mongotop to monitor database performance and identify slow queries.
+mongostat --host <hostname> --port <port>
+mongotop --host <hostname> --port <port>
