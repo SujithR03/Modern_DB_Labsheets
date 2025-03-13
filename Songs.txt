@@ -1,0 +1,317 @@
+[
+  {
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "genres": ["Rock", "Classic Rock"],
+    "ratings": [9.2, 9.1, 9.3],
+    "details": { "year": 1975, "duration": 354 }
+  },
+  {
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "genres": ["Rock", "Progressive Rock"],
+    "ratings": [9.5, 9.4, 9.6],
+    "details": { "year": 1971, "duration": 482 }
+  },
+  {
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "genres": ["Rock", "Soft Rock"],
+    "ratings": [9.0, 8.9, 9.1],
+    "details": { "year": 1976, "duration": 390 }
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "genres": ["Pop", "Soft Rock"],
+    "ratings": [8.8, 8.7, 8.9],
+    "details": { "year": 1971, "duration": 183 }
+  },
+  {
+    "title": "Hey Jude",
+    "artist": "The Beatles",
+    "genres": ["Pop", "Rock"],
+    "ratings": [9.1, 9.0, 9.2],
+    "details": { "year": 1968, "duration": 431 }
+  },
+  {
+    "title": "Like a Rolling Stone",
+    "artist": "Bob Dylan",
+    "genres": ["Rock", "Folk Rock"],
+    "ratings": [8.9, 8.8, 9.0],
+    "details": { "year": 1965, "duration": 371 }
+  },
+  {
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "genres": ["Grunge", "Alternative Rock"],
+    "ratings": [9.0, 8.9, 9.1],
+    "details": { "year": 1991, "duration": 301 }
+  },
+  {
+    "title": "Sweet Child O' Mine",
+    "artist": "Guns N' Roses",
+    "genres": ["Rock", "Hard Rock"],
+    "ratings": [9.3, 9.2, 9.4],
+    "details": { "year": 1987, "duration": 356 }
+  },
+  {
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "genres": ["Pop", "R&B"],
+    "ratings": [9.4, 9.3, 9.5],
+    "details": { "year": 1982, "duration": 294 }
+  },
+  {
+    "title": "I Will Always Love You",
+    "artist": "Whitney Houston",
+    "genres": ["Pop", "R&B"],
+    "ratings": [9.2, 9.1, 9.3],
+    "details": { "year": 1992, "duration": 273 }
+  },
+  {
+    "title": "Rolling in the Deep",
+    "artist": "Adele",
+    "genres": ["Pop", "Soul"],
+    "ratings": [9.1, 9.0, 9.2],
+    "details": { "year": 2010, "duration": 228 }
+  },
+  {
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "genres": ["Pop", "Dancehall"],
+    "ratings": [8.7, 8.6, 8.8],
+    "details": { "year": 2017, "duration": 233 }
+  },
+  {
+    "title": "Despacito",
+    "artist": "Luis Fonsi, Daddy Yankee",
+    "genres": ["Latin Pop", "Reggaeton"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2017, "duration": 227 }
+  },
+  {
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson ft. Bruno Mars",
+    "genres": ["Pop", "Funk"],
+    "ratings": [8.9, 8.8, 9.0],
+    "details": { "year": 2014, "duration": 270 }
+  },
+  {
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "genres": ["Pop", "Synthwave"],
+    "ratings": [9.0, 8.9, 9.1],
+    "details": { "year": 2019, "duration": 201 }
+  },
+  {
+    "title": "Old Town Road",
+    "artist": "Lil Nas X ft. Billy Ray Cyrus",
+    "genres": ["Country Rap", "Pop"],
+    "ratings": [8.5, 8.4, 8.6],
+    "details": { "year": 2019, "duration": 157 }
+  },
+  {
+    "title": "Bad Guy",
+    "artist": "Billie Eilish",
+    "genres": ["Pop", "Electropop"],
+    "ratings": [8.8, 8.7, 8.9],
+    "details": { "year": 2019, "duration": 194 }
+  },
+  {
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "genres": ["Pop", "Ballad"],
+    "ratings": [9.3, 9.2, 9.4],
+    "details": { "year": 2011, "duration": 285 }
+  },
+  {
+    "title": "Halo",
+    "artist": "Beyoncé",
+    "genres": ["Pop", "R&B"],
+    "ratings": [9.0, 8.9, 9.1],
+    "details": { "year": 2008, "duration": 256 }
+  },
+  {
+    "title": "Thinking Out Loud",
+    "artist": "Ed Sheeran",
+    "genres": ["Pop", "Soul"],
+    "ratings": [8.9, 8.8, 9.0],
+    "details": { "year": 2014, "duration": 281 }
+  },
+  {
+    "title": "All of Me",
+    "artist": "John Legend",
+    "genres": ["Pop", "R&B"],
+    "ratings": [9.1, 9.0, 9.2],
+    "details": { "year": 2013, "duration": 269 }
+  },
+  {
+    "title": "Shallow",
+    "artist": "Lady Gaga & Bradley Cooper",
+    "genres": ["Pop", "Country"],
+    "ratings": [9.2, 9.1, 9.3],
+    "details": { "year": 2018, "duration": 216 }
+  },
+  {
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "genres": ["Pop", "Romantic"],
+    "ratings": [8.8, 8.7, 8.9],
+    "details": { "year": 2017, "duration": 263 }
+  },
+  {
+    "title": "Love Story",
+    "artist": "Taylor Swift",
+    "genres": ["Pop", "Country"],
+    "ratings": [8.5, 8.4, 8.6],
+    "details": { "year": 2008, "duration": 231 }
+  },
+  {
+    "title": "You Belong With Me",
+    "artist": "Taylor Swift",
+    "genres": ["Pop", "Country"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2008, "duration": 237 }
+  },
+  {
+    "title": "Blank Space",
+    "artist": "Taylor Swift",
+    "genres": ["Pop"],
+    "ratings": [8.7, 8.6, 8.8],
+    "details": { "year": 2014, "duration": 231 }
+  },
+  {
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "genres": ["Pop"],
+    "ratings": [8.4, 8.3, 8.5],
+    "details": { "year": 2014, "duration": 219 }
+  },
+  {
+    "title": "Bad Blood",
+    "artist": "Taylor Swift",
+    "genres": ["Pop"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2014, "duration": 216 }
+  },
+  {
+    "title": "Hello",
+    "artist": "Adele",
+    "genres": ["Pop", "Ballad"],
+    "ratings": [9.2, 9.1, 9.3],
+    "details": { "year": 2015, "duration": 295 }
+  },
+  {
+    "title": "Sorry",
+    "artist": "Justin Bieber",
+    "genres": ["Pop", "Dance"],
+    "ratings": [8.5, 8.4, 8.6],
+    "details": { "year": 2015, "duration": 213 }
+  },
+  {
+    "title": "Can't Stop the Feeling!",
+    "artist": "Justin Timberlake",
+    "genres": ["Pop", "Dance"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2016, "duration": 236 }
+  },
+  {
+    "title": "Happy",
+    "artist": "Pharrell Williams",
+    "genres": ["Pop", "Soul"],
+    "ratings": [8.8, 8.7, 8.9],
+    "details": { "year": 2013, "duration": 235 }
+  },
+  {
+    "title": "Counting Stars",
+    "artist": "OneRepublic",
+    "genres": ["Pop", "Alternative"],
+    "ratings": [8.7, 8.6, 8.8],
+    "details": { "year": 2013, "duration": 264 }
+  },
+  {
+    "title": "Radioactive",
+    "artist": "Imagine Dragons",
+    "genres": ["Pop", "Alternative Rock"],
+    "ratings": [8.9, 8.8, 9.0],
+    "details": { "year": 2012, "duration": 188 }
+  },
+  {
+    "title": "Closer",
+    "artist": "The Chainsmokers ft. Halsey",
+    "genres": ["Pop", "EDM"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2016, "duration": 244 }
+  },
+  {
+    "title": "Starboy",
+    "artist": "The Weeknd ft. Daft Punk",
+    "genres": ["Pop", "R&B"],
+    "ratings": [8.7, 8.6, 8.8],
+    "details": { "year": 2016, "duration": 231 }
+  },
+  {
+    "title": "Work",
+    "artist": "Rihanna ft. Drake",
+    "genres": ["Pop", "Dancehall"],
+    "ratings": [8.5, 8.4, 8.6],
+    "details": { "year": 2016, "duration": 231 }
+  },
+  {
+    "title": "Levitating",
+    "artist": "Dua Lipa ft. DaBaby",
+    "genres": ["Pop", "Disco"],
+    "ratings": [8.8, 8.7, 8.9],
+    "details": { "year": 2020, "duration": 202 }
+  },
+  {
+    "title": "Peaches",
+    "artist": "Justin Bieber ft. Daniel Caesar, Giveon",
+    "genres": ["Pop", "R&B"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2021, "duration": 201 }
+  },
+  {
+    "title": "Stay",
+    "artist": "The Kid LAROI & Justin Bieber",
+    "genres": ["Pop", "Hip Hop"],
+    "ratings": [8.7, 8.6, 8.8],
+    "details": { "year": 2021, "duration": 173 }
+  },
+  {
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "genres": ["Pop", "Indie Pop"],
+    "ratings": [8.9, 8.8, 9.0],
+    "details": { "year": 2022, "duration": 167 }
+  },
+  {
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "genres": ["Pop", "Indie Pop"],
+    "ratings": [8.8, 8.7, 8.9],
+    "details": { "year": 2022, "duration": 201 }
+  },
+  {
+    "title": "Unholy",
+    "artist": "Sam Smith ft. Kim Petras",
+    "genres": ["Pop", "Dance"],
+    "ratings": [8.6, 8.5, 8.7],
+    "details": { "year": 2022, "duration": 198 }
+  },
+  {
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "genres": ["Pop", "Disco"],
+    "ratings": [8.7, 8.6, 8.8],
+    "details": { "year": 2023, "duration": 200 }
+  },
+  {
+    "title": "Calm Down",
+    "artist": "Rema ft. Selena Gomez",
+    "genres": ["Afrobeats", "Pop"],
+    "ratings": [8.5, 8.4, 8.6],
+    "details": { "year": 2022, "duration": 212 }
+  }
+]

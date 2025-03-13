@@ -1,0 +1,352 @@
+[
+  {
+    "eventName": "Tech Conference 2023",
+    "organizer": "TechCorp",
+    "participants": ["A001", "A002", "A003", "A004", "A005"],
+    "schedule": ["2023-11-01T09:00:00", "2023-11-02T17:00:00"],
+    "details": { "location": "San Francisco", "capacity": 500 }
+  },
+  {
+    "eventName": "Music Festival 2023",
+    "organizer": "SoundWave",
+    "participants": ["A006", "A007", "A008", "A009"],
+    "schedule": ["2023-11-03T10:00:00", "2023-11-05T22:00:00"],
+    "details": { "location": "Los Angeles", "capacity": 1000 }
+  },
+  {
+    "eventName": "Art Exhibition 2023",
+    "organizer": "ArtHub",
+    "participants": ["A010", "A011", "A012", "A013", "A014", "A015"],
+    "schedule": ["2023-11-06T12:00:00", "2023-11-07T18:00:00"],
+    "details": { "location": "New York", "capacity": 300 }
+  },
+  {
+    "eventName": "Food Fair 2023",
+    "organizer": "FlavorFest",
+    "participants": ["A016", "A017", "A018"],
+    "schedule": ["2023-11-08T11:00:00", "2023-11-09T20:00:00"],
+    "details": { "location": "Chicago", "capacity": 200 }
+  },
+  {
+    "eventName": "Film Screening 2023",
+    "organizer": "CineWorld",
+    "participants": ["A019", "A020", "A021", "A022", "A023", "A024", "A025"],
+    "schedule": ["2023-11-10T14:00:00", "2023-11-11T21:00:00"],
+    "details": { "location": "Miami", "capacity": 150 }
+  },
+  {
+    "eventName": "Book Fair 2023",
+    "organizer": "LitWorld",
+    "participants": ["A026", "A027", "A028", "A029"],
+    "schedule": ["2023-11-12T09:00:00", "2023-11-13T18:00:00"],
+    "details": { "location": "Seattle", "capacity": 400 }
+  },
+  {
+    "eventName": "Gaming Expo 2023",
+    "organizer": "GameOn",
+    "participants": ["A030", "A031", "A032", "A033", "A034"],
+    "schedule": ["2023-11-14T10:00:00", "2023-11-15T20:00:00"],
+    "details": { "location": "Boston", "capacity": 800 }
+  },
+  {
+    "eventName": "Fashion Show 2023",
+    "organizer": "StyleHub",
+    "participants": ["A035", "A036", "A037", "A038", "A039", "A040"],
+    "schedule": ["2023-11-16T13:00:00", "2023-11-17T22:00:00"],
+    "details": { "location": "Dallas", "capacity": 600 }
+  },
+  {
+    "eventName": "Science Fair 2023",
+    "organizer": "SciWorld",
+    "participants": ["A041", "A042", "A043", "A044"],
+    "schedule": ["2023-11-18T09:00:00", "2023-11-19T17:00:00"],
+    "details": { "location": "Atlanta", "capacity": 250 }
+  },
+  {
+    "eventName": "Sports Day 2023",
+    "organizer": "FitLife",
+    "participants": ["A045", "A046", "A047", "A048", "A049", "A050"],
+    "schedule": ["2023-11-20T08:00:00", "2023-11-21T16:00:00"],
+    "details": { "location": "Denver", "capacity": 120 }
+  },
+  {
+    "eventName": "Charity Gala 2023",
+    "organizer": "HopeOrg",
+    "participants": ["A051", "A052", "A053", "A054", "A055"],
+    "schedule": ["2023-11-22T18:00:00", "2023-11-23T23:00:00"],
+    "details": { "location": "Las Vegas", "capacity": 200 }
+  },
+  {
+    "eventName": "Comedy Night 2023",
+    "organizer": "LaughOutLoud",
+    "participants": ["A056", "A057", "A058", "A059"],
+    "schedule": ["2023-11-24T19:00:00", "2023-11-25T22:00:00"],
+    "details": { "location": "Orlando", "capacity": 150 }
+  },
+  {
+    "eventName": "Hackathon 2023",
+    "organizer": "CodeMasters",
+    "participants": ["A060", "A061", "A062", "A063", "A064", "A065"],
+    "schedule": ["2023-11-26T09:00:00", "2023-11-27T18:00:00"],
+    "details": { "location": "Houston", "capacity": 100 }
+  },
+  {
+    "eventName": "Photography Workshop 2023",
+    "organizer": "LensCraft",
+    "participants": ["A066", "A067", "A068", "A069"],
+    "schedule": ["2023-11-28T10:00:00", "2023-11-29T16:00:00"],
+    "details": { "location": "Phoenix", "capacity": 80 }
+  },
+  {
+    "eventName": "Networking Event 2023",
+    "organizer": "ConnectPro",
+    "participants": ["A070", "A071", "A072", "A073", "A074"],
+    "schedule": ["2023-11-30T14:00:00", "2023-12-01T19:00:00"],
+    "details": { "location": "New York", "capacity": 200 }
+  },
+  {
+    "eventName": "Startup Pitch 2023",
+    "organizer": "InnoVentures",
+    "participants": ["A075", "A076", "A077", "A078", "A079", "A080"],
+    "schedule": ["2023-12-02T09:00:00", "2023-12-03T17:00:00"],
+    "details": { "location": "San Francisco", "capacity": 150 }
+  },
+  {
+    "eventName": "Wine Tasting 2023",
+    "organizer": "VineyardElite",
+    "participants": ["A081", "A082", "A083", "A084"],
+    "schedule": ["2023-12-04T16:00:00", "2023-12-05T21:00:00"],
+    "details": { "location": "Napa Valley", "capacity": 100 }
+  },
+  {
+    "eventName": "Yoga Retreat 2023",
+    "organizer": "ZenLife",
+    "participants": ["A085", "A086", "A087", "A088", "A089"],
+    "schedule": ["2023-12-06T08:00:00", "2023-12-07T18:00:00"],
+    "details": { "location": "Santa Monica", "capacity": 50 }
+  },
+  {
+    "eventName": "Pet Adoption Day 2023",
+    "organizer": "PawsAndClaws",
+    "participants": ["A090", "A091", "A092", "A093", "A094", "A095"],
+    "schedule": ["2023-12-08T10:00:00", "2023-12-09T16:00:00"],
+    "details": { "location": "San Diego", "capacity": 200 }
+  },
+  {
+    "eventName": "Cooking Class 2023",
+    "organizer": "ChefMasters",
+    "participants": ["A096", "A097", "A098", "A099"],
+    "schedule": ["2023-12-10T12:00:00", "2023-12-11T15:00:00"],
+    "details": { "location": "Austin", "capacity": 30 }
+  },
+  {
+    "eventName": "Marathon 2023",
+    "organizer": "RunnersClub",
+    "participants": ["A100", "A101", "A102", "A103", "A104"],
+    "schedule": ["2023-12-12T07:00:00", "2023-12-12T11:00:00"],
+    "details": { "location": "Portland", "capacity": 500 }
+  },
+  {
+    "eventName": "Art Workshop 2023",
+    "organizer": "ArtisansGuild",
+    "participants": ["A105", "A106", "A107", "A108", "A109", "A110"],
+    "schedule": ["2023-12-13T10:00:00", "2023-12-14T17:00:00"],
+    "details": { "location": "Seattle", "capacity": 120 }
+  },
+  {
+    "eventName": "Tech Meetup 2023",
+    "organizer": "DevNetwork",
+    "participants": ["A111", "A112", "A113", "A114"],
+    "schedule": ["2023-12-15T14:00:00", "2023-12-16T19:00:00"],
+    "details": { "location": "Boston", "capacity": 100 }
+  },
+  {
+    "eventName": "Holiday Market 2023",
+    "organizer": "SeasonsGreet",
+    "participants": ["A115", "A116", "A117", "A118", "A119", "A120"],
+    "schedule": ["2023-12-17T09:00:00", "2023-12-18T21:00:00"],
+    "details": { "location": "Chicago", "capacity": 300 }
+  },
+  {
+    "eventName": "Dance Party 2023",
+    "organizer": "GrooveNation",
+    "participants": ["A121", "A122", "A123", "A124", "A125"],
+    "schedule": ["2023-12-19T20:00:00", "2023-12-20T02:00:00"],
+    "details": { "location": "Miami", "capacity": 500 }
+  },
+  {
+    "eventName": "Business Summit 2023",
+    "organizer": "BizPros",
+    "participants": ["A126", "A127", "A128", "A129"],
+    "schedule": ["2023-12-21T09:00:00", "2023-12-22T17:00:00"],
+    "details": { "location": "Dallas", "capacity": 400 }
+  },
+  {
+    "eventName": "Film Festival 2023",
+    "organizer": "CineFest",
+    "participants": ["A130", "A131", "A132", "A133", "A134", "A135"],
+    "schedule": ["2023-12-23T12:00:00", "2023-12-24T22:00:00"],
+    "details": { "location": "Los Angeles", "capacity": 1000 }
+  },
+  {
+    "eventName": "Science Expo 2023",
+    "organizer": "FutureTech",
+    "participants": ["A136", "A137", "A138", "A139"],
+    "schedule": ["2023-12-25T10:00:00", "2023-12-26T18:00:00"],
+    "details": { "location": "San Jose", "capacity": 200 }
+  },
+  {
+    "eventName": "Fitness Challenge 2023",
+    "organizer": "FitQuest",
+    "participants": ["A140", "A141", "A142", "A143", "A144"],
+    "schedule": ["2023-12-27T08:00:00", "2023-12-28T16:00:00"],
+    "details": { "location": "Denver", "capacity": 150 }
+  },
+  {
+    "eventName": "Art Auction 2023",
+    "organizer": "ArtCollectors",
+    "participants": ["A145", "A146", "A147", "A148", "A149", "A150"],
+    "schedule": ["2023-12-29T14:00:00", "2023-12-30T20:00:00"],
+    "details": { "location": "New York", "capacity": 300 }
+  },
+  {
+    "eventName": "Music Workshop 2023",
+    "organizer": "MelodyMasters",
+    "participants": ["A151", "A152", "A153", "A154"],
+    "schedule": ["2023-12-31T10:00:00", "2024-01-01T18:00:00"],
+    "details": { "location": "Nashville", "capacity": 100 }
+  },
+  {
+    "eventName": "Coding Bootcamp 2023",
+    "organizer": "CodeAcademy",
+    "participants": ["A155", "A156", "A157", "A158", "A159"],
+    "schedule": ["2024-01-02T09:00:00", "2024-01-03T17:00:00"],
+    "details": { "location": "San Francisco", "capacity": 50 }
+  },
+  {
+    "eventName": "Gardening Workshop 2023",
+    "organizer": "GreenThumb",
+    "participants": ["A160", "A161", "A162", "A163", "A164", "A165"],
+    "schedule": ["2024-01-04T10:00:00", "2024-01-05T16:00:00"],
+    "details": { "location": "Portland", "capacity": 80 }
+  },
+  {
+    "eventName": "Poetry Reading 2023",
+    "organizer": "VerseVibes",
+    "participants": ["A166", "A167", "A168", "A169"],
+    "schedule": ["2024-01-06T18:00:00",     "2024-01-07T21:00:00"],
+    "details": { "location": "Seattle", "capacity": 50 }
+  },
+  {
+    "eventName": "Tech Hackathon 2024",
+    "organizer": "InnovateTech",
+    "participants": ["A170", "A171", "A172", "A173", "A174"],
+    "schedule": ["2024-01-08T09:00:00", "2024-01-09T18:00:00"],
+    "details": { "location": "Austin", "capacity": 100 }
+  },
+  {
+    "eventName": "Artisan Market 2024",
+    "organizer": "CraftMasters",
+    "participants": ["A175", "A176", "A177", "A178", "A179", "A180"],
+    "schedule": ["2024-01-10T10:00:00", "2024-01-11T20:00:00"],
+    "details": { "location": "Santa Fe", "capacity": 200 }
+  },
+  {
+    "eventName": "Music Concert 2024",
+    "organizer": "SoundWave",
+    "participants": ["A181", "A182", "A183", "A184"],
+    "schedule": ["2024-01-12T19:00:00", "2024-01-13T23:00:00"],
+    "details": { "location": "Las Vegas", "capacity": 1000 }
+  },
+  {
+    "eventName": "Science Fair 2024",
+    "organizer": "SciWorld",
+    "participants": ["A185", "A186", "A187", "A188"],
+    "schedule": ["2024-01-14T09:00:00", "2024-01-15T17:00:00"],
+    "details": { "location": "Atlanta", "capacity": 250 }
+  },
+  {
+    "eventName": "Book Signing 2024",
+    "organizer": "LitWorld",
+    "participants": ["A189", "A190", "A191", "A192", "A193", "A194"],
+    "schedule": ["2024-01-16T12:00:00", "2024-01-17T18:00:00"],
+    "details": { "location": "Boston", "capacity": 150 }
+  },
+  {
+    "eventName": "Fitness Expo 2024",
+    "organizer": "FitLife",
+    "participants": ["A195", "A196", "A197", "A198", "A199"],
+    "schedule": ["2024-01-18T08:00:00", "2024-01-19T16:00:00"],
+    "details": { "location": "Denver", "capacity": 300 }
+  },
+  {
+    "eventName": "Art Gallery 2024",
+    "organizer": "ArtHub",
+    "participants": ["A200", "A201", "A202", "A203", "A204", "A205"],
+    "schedule": ["2024-01-20T14:00:00", "2024-01-21T20:00:00"],
+    "details": { "location": "New York", "capacity": 400 }
+  },
+  {
+    "eventName": "Startup Summit 2024",
+    "organizer": "InnoVentures",
+    "participants": ["A206", "A207", "A208", "A209", "A210"],
+    "schedule": ["2024-01-22T09:00:00", "2024-01-23T17:00:00"],
+    "details": { "location": "San Francisco", "capacity": 200 }
+  },
+  {
+    "eventName": "Wine Tasting 2024",
+    "organizer": "VineyardElite",
+    "participants": ["A211", "A212", "A213", "A214"],
+    "schedule": ["2024-01-24T16:00:00", "2024-01-25T21:00:00"],
+    "details": { "location": "Napa Valley", "capacity": 100 }
+  },
+  {
+    "eventName": "Yoga Workshop 2024",
+    "organizer": "ZenLife",
+    "participants": ["A215", "A216", "A217", "A218", "A219"],
+    "schedule": ["2024-01-26T08:00:00", "2024-01-27T18:00:00"],
+    "details": { "location": "Santa Monica", "capacity": 50 }
+  },
+  {
+    "eventName": "Pet Adoption Event 2024",
+    "organizer": "PawsAndClaws",
+    "participants": ["A220", "A221", "A222", "A223", "A224", "A225"],
+    "schedule": ["2024-01-28T10:00:00", "2024-01-29T16:00:00"],
+    "details": { "location": "San Diego", "capacity": 200 }
+  },
+  {
+    "eventName": "Cooking Masterclass 2024",
+    "organizer": "ChefMasters",
+    "participants": ["A226", "A227", "A228", "A229"],
+    "schedule": ["2024-01-30T12:00:00", "2024-01-31T15:00:00"],
+    "details": { "location": "Austin", "capacity": 30 }
+  },
+  {
+    "eventName": "Marathon 2024",
+    "organizer": "RunnersClub",
+    "participants": ["A230", "A231", "A232", "A233", "A234"],
+    "schedule": ["2024-02-01T07:00:00", "2024-02-01T11:00:00"],
+    "details": { "location": "Portland", "capacity": 500 }
+  },
+  {
+    "eventName": "Art Exhibition 2024",
+    "organizer": "ArtisansGuild",
+    "participants": ["A235", "A236", "A237", "A238", "A239", "A240"],
+    "schedule": ["2024-02-02T10:00:00", "2024-02-03T17:00:00"],
+    "details": { "location": "Seattle", "capacity": 120 }
+  },
+  {
+    "eventName": "Tech Meetup 2024",
+    "organizer": "DevNetwork",
+    "participants": ["A241", "A242", "A243", "A244"],
+    "schedule": ["2024-02-04T14:00:00", "2024-02-05T19:00:00"],
+    "details": { "location": "Boston", "capacity": 100 }
+  },
+  {
+    "eventName": "Holiday Market 2024",
+    "organizer": "SeasonsGreet",
+    "participants": ["A245", "A246", "A247", "A248", "A249", "A250"],
+    "schedule": ["2024-02-06T09:00:00", "2024-02-07T21:00:00"],
+    "details": { "location": "Chicago", "capacity": 300 }
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Alice Johnson",
+    "experience": 5,
+    "appliedJobs": ["Software Engineer", "Data Analyst"],
+    "contact": { "email": "alice.johnson@example.com", "phone": "123-456-7890" },
+    "qualifications": ["Bachelor's in CS", "Certified Java Developer"]
+  },
+  {
+    "name": "Bob Smith",
+    "experience": 3,
+    "appliedJobs": ["Software Engineer", "DevOps Engineer"],
+    "contact": { "email": "bob.smith@example.com", "phone": "987-654-3210" },
+    "qualifications": ["Bachelor's in IT", "AWS Certified"]
+  },
+  {
+    "name": "Charlie Brown",
+    "experience": 8,
+    "appliedJobs": ["Product Manager", "Marketing Specialist"],
+    "contact": { "email": "charlie.brown@example.com", "phone": "555-123-4567" },
+    "qualifications": ["MBA", "PMP Certification"]
+  },
+  {
+    "name": "Diana Prince",
+    "experience": 4,
+    "appliedJobs": ["Data Analyst", "Marketing Specialist"],
+    "contact": { "email": "diana.prince@example.com", "phone": "555-987-6543" },
+    "qualifications": ["Master's in Statistics", "Google Analytics Certified"]
+  },
+  {
+    "name": "Edward Norton",
+    "experience": 6,
+    "appliedJobs": ["Software Engineer", "DevOps Engineer", "Product Manager"],
+    "contact": { "email": "edward.norton@example.com", "phone": "555-444-3333" },
+    "qualifications": ["PhD in CS", "Certified Kubernetes Administrator"]
+  },
+  {
+    "name": "Fiona Gallagher",
+    "experience": 7,
+    "appliedJobs": ["Product Manager", "Marketing Specialist", "HR Manager"],
+    "contact": { "email": "fiona.gallagher@example.com", "phone": "555-666-7777" },
+    "qualifications": ["Bachelor's in HR", "SHRM Certified"]
+  },
+  {
+    "name": "George Lucas",
+    "experience": 10,
+    "appliedJobs": ["Software Engineer", "DevOps Engineer", "Cloud Architect"],
+    "contact": { "email": "george.lucas@example.com", "phone": "555-888-9999" },
+    "qualifications": ["Master's in CS", "AWS Solutions Architect"]
+  },
+  {
+    "name": "Hannah Montana",
+    "experience": 2,
+    "appliedJobs": ["Frontend Developer", "UI/UX Designer"],
+    "contact": { "email": "hannah.montana@example.com", "phone": "555-111-2222" },
+    "qualifications": ["Associate's in Design", "Figma Certified"]
+  },
+  {
+    "name": "Ian Somerhalder",
+    "experience": 5,
+    "appliedJobs": ["DevOps Engineer", "Cloud Architect"],
+    "contact": { "email": "ian.somerhalder@example.com", "phone": "555-333-4444" },
+    "qualifications": ["Bachelor's in IT", "Certified Docker Associate"]
+  },
+  {
+    "name": "Julia Roberts",
+    "experience": 4,
+    "appliedJobs": ["Data Analyst", "Business Analyst"],
+    "contact": { "email": "julia.roberts@example.com", "phone": "555-555-6666" },
+    "qualifications": ["Bachelor's in Business", "Tableau Certified"]
+  },
+  {
+    "name": "Kevin Hart",
+    "experience": 6,
+    "appliedJobs": ["Marketing Specialist", "Sales Executive"],
+    "contact": { "email": "kevin.hart@example.com", "phone": "555-777-8888" },
+    "qualifications": ["Bachelor's in Marketing", "HubSpot Certified"]
+  },
+  {
+    "name": "Liam Neeson",
+    "experience": 8,
+    "appliedJobs": ["Product Manager", "Operations Manager"],
+    "contact": { "email": "liam.neeson@example.com", "phone": "555-999-0000" },
+    "qualifications": ["MBA", "Six Sigma Black Belt"]
+  },
+  {
+    "name": "Megan Fox",
+    "experience": 3,
+    "appliedJobs": ["Frontend Developer", "UI/UX Designer"],
+    "contact": { "email": "megan.fox@example.com", "phone": "555-222-3333" },
+    "qualifications": ["Bachelor's in Design", "Adobe Certified"]
+  },
+  {
+    "name": "Natalie Portman",
+    "experience": 5,
+    "appliedJobs": ["Backend Developer", "Full Stack Developer"],
+    "contact": { "email": "natalie.portman@example.com", "phone": "555-444-5555" },
+    "qualifications": ["Bachelor's in CS", "Node.js Certified"]
+  },
+  {
+    "name": "Oscar Wilde",
+    "experience": 7,
+    "appliedJobs": ["Cloud Architect", "DevOps Engineer"],
+    "contact": { "email": "oscar.wilde@example.com", "phone": "555-666-7777" },
+    "qualifications": ["Master's in IT", "Certified Azure Developer"]
+  },
+  {
+    "name": "Peter Parker",
+    "experience": 4,
+    "appliedJobs": ["Full Stack Developer", "Mobile App Developer"],
+    "contact": { "email": "peter.parker@example.com", "phone": "555-888-9999" },
+    "qualifications": ["Bachelor's in CS", "Flutter Certified"]
+  },
+  {
+    "name": "Quincy Jones",
+    "experience": 6,
+    "appliedJobs": ["Cybersecurity Analyst", "Network Engineer"],
+    "contact": { "email": "quincy.jones@example.com", "phone": "555-111-2222" },
+    "qualifications": ["Bachelor's in Cybersecurity", "CEH Certified"]
+  },
+  {
+    "name": "Rachel Green",
+    "experience": 5,
+    "appliedJobs": ["HR Manager", "Customer Success Manager"],
+    "contact": { "email": "rachel.green@example.com", "phone": "555-333-4444" },
+    "qualifications": ["Bachelor's in HR", "Certified Customer Success Professional"]
+  },
+  {
+    "name": "Samuel Jackson",
+    "experience": 8,
+    "appliedJobs": ["QA Engineer", "Technical Writer"],
+    "contact": { "email": "samuel.jackson@example.com", "phone": "555-555-6666" },
+    "qualifications": ["Bachelor's in QA", "ISTQB Certified"]
+  },
+  {
+    "name": "Taylor Swift",
+    "experience": 3,
+    "appliedJobs": ["Graphic Designer", "UI/UX Designer"],
+    "contact": { "email": "taylor.swift@example.com", "phone": "555-777-8888" },
+    "qualifications": ["Bachelor's in Design", "Photoshop Certified"]
+  },
+  {
+    "name": "Uma Thurman",
+    "experience": 5,
+    "appliedJobs": ["Cybersecurity Analyst", "Network Engineer"],
+    "contact": { "email": "uma.thurman@example.com", "phone": "555-999-0000" },
+    "qualifications": ["Bachelor's in Cybersecurity", "CISSP Certified"]
+  },
+  {
+    "name": "Vin Diesel",
+    "experience": 7,
+    "appliedJobs": ["Cloud Architect", "DevOps Engineer"],
+    "contact": { "email": "vin.diesel@example.com", "phone": "555-222-3333" },
+    "qualifications": ["Master's in IT", "Certified Kubernetes Administrator"]
+  },
+  {
+    "name": "Will Smith",
+    "experience": 6,
+    "appliedJobs": ["Product Manager", "Operations Manager"],
+    "contact": { "email": "will.smith@example.com", "phone": "555-444-5555" },
+    "qualifications": ["MBA", "PMP Certification"]
+  },
+  {
+    "name": "Xavier Hall",
+    "experience": 4,
+    "appliedJobs": ["Data Scientist", "AI Researcher"],
+    "contact": { "email": "xavier.hall@example.com", "phone": "555-666-7777" },
+    "qualifications": ["Master's in AI", "TensorFlow Certified"]
+  },
+  {
+    "name": "Yara Greyjoy",
+    "experience": 5,
+    "appliedJobs": ["Data Scientist", "Business Analyst"],
+    "contact": { "email": "yara.greyjoy@example.com", "phone": "555-888-9999" },
+    "qualifications": ["Bachelor's in Data Science", "Power BI Certified"]
+  },
+  {
+    "name": "Zoe Saldana",
+    "experience": 6,
+    "appliedJobs": ["HR Manager", "Customer Success Manager"],
+    "contact": { "email": "zoe.saldana@example.com", "phone": "555-111-2222" },
+    "qualifications": ["Bachelor's in HR", "Certified Employee Engagement Professional"]
+  },
+  {
+    "name": "Adam Levine",
+    "experience": 7,
+    "appliedJobs": ["Operations Manager", "Supply Chain Manager"],
+    "contact": { "email": "adam.levine@example.com", "phone": "555-333-4444" },
+    "qualifications": ["MBA", "SCPro Certification"]
+  },
+  {
+    "name": "Blake Shelton",
+    "experience": 5,
+    "appliedJobs": ["Digital Marketing Manager", "Content Strategist"],
+    "contact": { "email": "blake.shelton@example.com", "phone": "555-555-6666" },
+    "qualifications": ["Bachelor's in Marketing", "Google Ads Certified"]
+  },
+  {
+    "name": "Carrie Underwood",
+    "experience": 4,
+    "appliedJobs": ["IT Support Specialist", "Network Engineer"],
+    "contact": { "email": "carrie.underwood@example.com", "phone": "555-777-8888" },
+    "qualifications": ["Associate's in IT", "CompTIA A+ Certified"]
+  },
+  {
+    "name": "David Beckham",
+    "experience": 8,
+    "appliedJobs": ["Cloud Architect", "DevOps Engineer"],
+    "contact": { "email": "david.beckham@example.com", "phone": "555-999-0000" },
+    "qualifications": ["Master's in IT", "Certified AWS Architect"]
+  },
+  {
+    "name": "Eva Mendes",
+    "experience": 3,
+    "appliedJobs": ["IT Support Specialist", "Network Engineer"],
+    "contact": { "email": "eva.mendes@example.com", "phone": "555-222-3333" },
+    "qualifications": ["Associate's in IT", "Cisco Certified"]
+  },
+  {
+    "name": "Frank Sinatra",
+    "experience": 5,
+    "appliedJobs": ["Blockchain Developer", "Cybersecurity Analyst"],
+    "contact": { "email": "frank.sinatra@example.com", "phone": "555-444-5555" },
+    "qualifications": ["Bachelor's in Blockchain", "Certified Ethereum Developer"]
+  },
+  {
+    "name": "Grace Kelly",
+    "experience": 6,
+    "appliedJobs": ["Mobile App Developer", "Full Stack Developer"],
+    "contact": { "email": "grace.kelly@example.com", "phone": "555-666-7777" },
+    "qualifications": ["Bachelor's in CS", "React Native Certified"]
+  },
+  {
+    "name": "Henry Cavill",
+    "experience": 7,
+    "appliedJobs": ["Robotics Engineer", "AI Researcher"],
+    "contact": { "email": "henry.cavill@example.com", "phone": "555-888-9999" },
+    "qualifications": ["Master's in Robotics", "Certified AI Engineer"]
+  },
+  {
+    "name": "Idris Elba",
+    "experience": 8,
+    "appliedJobs": ["Network Engineer", "Cybersecurity Analyst"],
+    "contact": { "email": "idris.elba@example.com", "phone": "555-111-2222" },
+    "qualifications": ["Bachelor's in Cybersecurity", "CISSP Certified"]
+  },
+  {
+    "name": "Jennifer Aniston",
+    "experience": 5,
+    "appliedJobs": ["Environmental Engineer", "Chemical Engineer"],
+    "contact": { "email": "jennifer.aniston@example.com", "phone": "555-333-4444" },
+    "qualifications": ["Bachelor's in Environmental Science", "LEED Certified"]
+  },
+  {
+    "name": "Keanu Reeves",
+    "experience": 6,
+    "appliedJobs": ["QA Engineer", "Technical Writer"],
+    "contact": { "email": "keanu.reeves@example.com", "phone": "555-555-6666" },
+    "qualifications": ["Bachelor's in QA", "ISTQB Certified"]
+  },
+  {
+    "name": "Leonardo DiCaprio",
+    "experience": 7,
+    "appliedJobs": ["Legal Advisor", "Public Relations Specialist"],
+    "contact": { "email": "leonardo.dicaprio@example.com", "phone": "555-777-8888" },
+    "qualifications": ["Juris Doctor", "Certified Legal Consultant"]
+  },
+  {
+    "name": "Meryl Streep",
+    "experience": 8,
+    "appliedJobs": ["AI Researcher", "Data Scientist"],
+    "contact": { "email": "meryl.streep@example.com", "phone": "555-999-0000" },
+    "qualifications": ["PhD in AI", "Certified Machine Learning Engineer"]
+  },
+  {
+    "name": "Nicole Kidman",
+    "experience": 5,
+    "appliedJobs": ["Public Relations Specialist", "Event Planner"],
+    "contact": { "email": "nicole.kidman@example.com", "phone": "555-222-3333" },
+    "qualifications": ["Bachelor's in Communications", "Certified PR Professional"]
+  },
+  {
+    "name": "Orlando Bloom",
+    "experience": 4,
+    "appliedJobs": ["Game Developer", "Mobile App Developer"],
+    "contact": { "email": "orlando.bloom@example.com", "phone": "555-444-5555" },
+    "qualifications": ["Bachelor's in Game Design", "Unity Certified"]
+  },
+  {
+    "name": "Penelope Cruz",
+    "experience": 6,
+    "appliedJobs": ["Event Planner", "Customer Success Manager"],
+    "contact": { "email": "penelope.cruz@example.com", "phone": "555-666-7777" },
+    "qualifications": ["Bachelor's in Event Management", "Certified Event Planner"]
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "experience": 7,
+    "appliedJobs": ["Financial Analyst", "Business Analyst"],
+    "contact": { "email": "robert.downey@example.com", "phone": "555-888-9999" },
+    "qualifications": ["MBA", "CFA Certified"]
+  },
+  {
+    "name": "Scarlett Johansson",
+    "experience": 5,
+    "appliedJobs": ["Customer Success Manager", "Content Strategist"],
+    "contact": { "email": "scarlett.johansson@example.com", "phone": "555-111-2222" },
+    "qualifications": ["Bachelor's in Marketing", "HubSpot Certified"]
+  },
+  {
+    "name": "Tom Cruise",
+    "experience": 8,
+    "appliedJobs": ["Technical Writer", "Content Strategist"],
+    "contact": { "email": "tom.cruise@example.com", "phone": "555-333-4444" },
+    "qualifications": ["Bachelor's in Technical Writing", "Certified Content Strategist"]
+  },
+  {
+    "name": "Usher Raymond",
+    "experience": 6,
+    "appliedJobs": ["Supply Chain Manager", "Operations Manager"],
+    "contact": { "email": "usher.raymond@example.com", "phone": "555-555-6666" },
+    "qualifications": ["MBA", "SCPro Certification"]
+  },
+  {
+    "name": "Victoria Beckham",
+    "experience": 5,
+    "appliedJobs": ["Content Strategist", "Digital Marketing Manager"],
+    "contact": { "email": "victoria.beckham@example.com", "phone": "555-777-8888" },
+    "qualifications": ["Bachelor's in Marketing", "Google Ads Certified"]
+  },
+  {
+    "name": "Wesley Snipes",
+    "experience": 7,
+    "appliedJobs": ["Architect", "Civil Engineer"],
+    "contact": { "email": "wesley.snipes@example.com", "phone": "555-999-0000" },
+    "qualifications": ["Bachelor's in Architecture", "LEED Certified"]
+  },
+  {
+    "name": "X-Men Wolverine",
+    "experience": 10,
+    "appliedJobs": ["Biomedical Engineer", "Robotics Engineer"],
+    "contact": { "email": "wolverine@example.com", "phone": "555-222-3333" },
+    "qualifications": ["PhD in Biomedical Engineering", "Certified Robotics Engineer"]
+  },
+  {
+    "name": "Yara Greyjoy",
+    "experience": 5,
+    "appliedJobs": ["Data Scientist", "Business Analyst"],
+    "contact": { "email": "yara.greyjoy@example.com", "phone": "55-888-9999" },
+"qualifications": ["Master's in Data Science", "Tableau Certified"]
+},
+{
+"name": "Zoe Saldana",
+"experience": 6,
+"appliedJobs": ["HR Manager", "Customer Success Manager"],
+"contact": { "email": "zoe.saldana@example.com ", "phone": "555-111-2222" },
+"qualifications": ["Bachelor's in HR", "Certified Employee Engagement Professional"]
+}
+]

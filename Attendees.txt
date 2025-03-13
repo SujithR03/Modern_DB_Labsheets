@@ -1,0 +1,345 @@
+[
+  {
+    "name": "Alice Johnson",
+    "ticketType": "Premium",
+    "eventsAttended": ["Tech Conference 2023", "Music Festival 2023", "Art Exhibition 2023"],
+    "contact": { "email": "alice@example.com", "phone": "123-456-7890" },
+    "preferences": ["Technology", "Music"]
+  },
+  {
+    "name": "Bob Smith",
+    "ticketType": "Standard",
+    "eventsAttended": ["Food Fair 2023", "Film Screening 2023", "Book Fair 2023", "Gaming Expo 2023"],
+    "contact": { "email": "bob@example.com", "phone": "987-654-3210" },
+    "preferences": ["Food", "Entertainment"]
+  },
+  {
+    "name": "Charlie Brown",
+    "ticketType": "Basic",
+    "eventsAttended": ["Fashion Show 2023", "Science Fair 2023"],
+    "contact": { "email": "charlie@example.com", "phone": "555-555-5555" },
+    "preferences": ["Fashion", "Science"]
+  },
+  {
+    "name": "Diana Prince",
+    "ticketType": "Premium",
+    "eventsAttended": ["Sports Day 2023", "Charity Gala 2023", "Comedy Night 2023"],
+    "contact": { "email": "diana@example.com", "phone": "111-222-3333" },
+    "preferences": ["Sports", "Charity"]
+  },
+  {
+    "name": "Ethan Hunt",
+    "ticketType": "Standard",
+    "eventsAttended": ["Hackathon 2023", "Photography Workshop 2023", "Networking Event 2023"],
+    "contact": { "email": "ethan@example.com", "phone": "444-444-4444" },
+    "preferences": ["Coding", "Photography"]
+  },
+  {
+    "name": "Fiona Gallagher",
+    "ticketType": "Basic",
+    "eventsAttended": ["Startup Pitch 2023", "Wine Tasting 2023"],
+    "contact": { "email": "fiona@example.com", "phone": "666-666-6666" },
+    "preferences": ["Entrepreneurship", "Wine"]
+  },
+  {
+    "name": "George Lucas",
+    "ticketType": "Premium",
+    "eventsAttended": ["Yoga Retreat 2023", "Pet Adoption Day 2023", "Cooking Class 2023"],
+    "contact": { "email": "george@example.com", "phone": "777-777-7777" },
+    "preferences": ["Wellness", "Pets"]
+  },
+  {
+    "name": "Hannah Montana",
+    "ticketType": "Standard",
+    "eventsAttended": ["Marathon 2023", "Art Workshop 2023", "Tech Meetup 2023"],
+    "contact": { "email": "hannah@example.com", "phone": "888-888-8888" },
+    "preferences": ["Fitness", "Art"]
+  },
+  {
+    "name": "Ian Fleming",
+    "ticketType": "Basic",
+    "eventsAttended": ["Holiday Market 2023", "Dance Party 2023"],
+    "contact": { "email": "ian@example.com", "phone": "999-999-9999" },
+    "preferences": ["Shopping", "Music"]
+  },
+  {
+    "name": "Julia Roberts",
+    "ticketType": "Premium",
+    "eventsAttended": ["Business Summit 2023", "Film Festival 2023", "Science Expo 2023"],
+    "contact": { "email": "julia@example.com", "phone": "222-222-2222" },
+    "preferences": ["Business", "Science"]
+  },
+  {
+    "name": "Kevin Hart",
+    "ticketType": "Standard",
+    "eventsAttended": ["Fitness Challenge 2023", "Art Auction 2023", "Music Workshop 2023"],
+    "contact": { "email": "kevin@example.com", "phone": "333-333-3333" },
+    "preferences": ["Fitness", "Art"]
+  },
+  {
+    "name": "Liam Neeson",
+    "ticketType": "Basic",
+    "eventsAttended": ["Coding Bootcamp 2023", "Gardening Workshop 2023"],
+    "contact": { "email": "liam@example.com", "phone": "444-444-4444" },
+    "preferences": ["Coding", "Nature"]
+  },
+  {
+    "name": "Megan Fox",
+    "ticketType": "Premium",
+    "eventsAttended": ["Poetry Reading 2023", "Tech Hackathon 2024", "Artisan Market 2024"],
+    "contact": { "email": "megan@example.com", "phone": "555-555-5555" },
+    "preferences": ["Literature", "Art"]
+  },
+  {
+    "name": "Nina Dobrev",
+    "ticketType": "Standard",
+    "eventsAttended": ["Music Concert 2024", "Science Fair 2024", "Book Signing 2024"],
+    "contact": { "email": "nina@example.com", "phone": "666-666-6666" },
+    "preferences": ["Music", "Science"]
+  },
+  {
+    "name": "Oliver Queen",
+    "ticketType": "Basic",
+    "eventsAttended": ["Fitness Expo 2024", "Art Gallery 2024", "Startup Summit 2024"],
+    "contact": { "email": "oliver@example.com", "phone": "777-777-7777" },
+    "preferences": ["Fitness", "Entrepreneurship"]
+  },
+  {
+    "name": "Peter Parker",
+    "ticketType": "Premium",
+    "eventsAttended": ["Wine Tasting 2024", "Yoga Workshop 2024", "Pet Adoption Event 2024"],
+    "contact": { "email": "peter@example.com", "phone": "888-888-8888" },
+    "preferences": ["Wine", "Wellness"]
+  },
+  {
+    "name": "Quinn Fabray",
+    "ticketType": "Standard",
+    "eventsAttended": ["Cooking Masterclass 2024", "Marathon 2024", "Art Exhibition 2024"],
+    "contact": { "email": "quinn@example.com", "phone": "999-999-9999" },
+    "preferences": ["Cooking", "Fitness"]
+  },
+  {
+    "name": "Rachel Green",
+    "ticketType": "Basic",
+    "eventsAttended": ["Tech Meetup 2024", "Holiday Market 2024"],
+    "contact": { "email": "rachel@example.com", "phone": "222-222-2222" },
+    "preferences": ["Technology", "Shopping"]
+  },
+  {
+    "name": "Sam Winchester",
+    "ticketType": "Premium",
+    "eventsAttended": ["Tech Conference 2023", "Music Festival 2023", "Art Exhibition 2023"],
+    "contact": { "email": "sam@example.com", "phone": "333-333-3333" },
+    "preferences": ["Technology", "Art"]
+  },
+  {
+    "name": "Taylor Swift",
+    "ticketType": "Standard",
+    "eventsAttended": ["Food Fair 2023", "Film Screening 2023", "Book Fair 2023"],
+    "contact": { "email": "taylor@example.com", "phone": "444-444-4444" },
+    "preferences": ["Food", "Entertainment"]
+  },
+  {
+    "name": "Uma Thurman",
+    "ticketType": "Basic",
+    "eventsAttended": ["Fashion Show 2023", "Science Fair 2023"],
+    "contact": { "email": "uma@example.com", "phone": "555-555-5555" },
+    "preferences": ["Fashion", "Science"]
+  },
+  {
+    "name": "Victor Creed",
+    "ticketType": "Premium",
+    "eventsAttended": ["Sports Day 2023", "Charity Gala 2023", "Comedy Night 2023"],
+    "contact": { "email": "victor@example.com", "phone": "666-666-6666" },
+    "preferences": ["Sports", "Charity"]
+  },
+  {
+    "name": "Wade Wilson",
+    "ticketType": "Standard",
+    "eventsAttended": ["Hackathon 2023", "Photography Workshop 2023", "Networking Event 2023"],
+    "contact": { "email": "wade@example.com", "phone": "777-777-7777" },
+    "preferences": ["Coding", "Photography"]
+  },
+  {
+    "name": "Xavier Charles",
+    "ticketType": "Basic",
+    "eventsAttended": ["Startup Pitch 2023", "Wine Tasting 2023"],
+    "contact": { "email": "xavier@example.com", "phone": "888-888-8888" },
+    "preferences": ["Entrepreneurship", "Wine"]
+  },
+  {
+    "name": "Yara Greyjoy",
+    "ticketType": "Premium",
+    "eventsAttended": ["Yoga Retreat 2023", "Pet Adoption Day 2023", "Cooking Class 2023"],
+    "contact": { "email": "yara@example.com", "phone": "999-999-9999" },
+    "preferences": ["Wellness", "Pets"]
+  },
+  {
+    "name": "Zoe Saldana",
+    "ticketType": "Standard",
+    "eventsAttended": ["Marathon 2023", "Art Workshop 2023", "Tech Meetup 2023"],
+    "contact": { "email": "zoe@example.com", "phone": "222-222-2222" },
+    "preferences": ["Fitness", "Art"]
+  },
+  {
+    "name": "Adam Levine",
+    "ticketType": "Basic",
+    "eventsAttended": ["Holiday Market 2023", "Dance Party 2023"],
+    "contact": { "email": "adam@example.com", "phone": "333-333-3333" },
+    "preferences": ["Shopping", "Music"]
+  },
+  {
+    "name": "Blake Shelton",
+    "ticketType": "Premium",
+    "eventsAttended": ["Business Summit 2023", "Film Festival 2023", "Science Expo 2023"],
+    "contact": { "email": "blake@example.com", "phone": "444-444-4444" },
+    "preferences": ["Business", "Science"]
+  },
+  {
+    "name": "Chris Evans",
+    "ticketType": "Standard",
+    "eventsAttended": ["Fitness Challenge 2023", "Art Auction 2023", "Music Workshop 2023"],
+    "contact": { "email": "chris@example.com", "phone": "555-555-5555" },
+    "preferences": ["Fitness", "Art"]
+  },
+  {
+    "name": "Dwayne Johnson",
+    "ticketType": "Basic",
+    "eventsAttended": ["Coding Bootcamp 2023", "Gardening Workshop 2023"],
+    "contact": { "email": "dwayne@example.com", "phone": "666-666-6666" },
+    "preferences": ["Coding", "Nature"]
+  },
+  {
+    "name": "Edward Norton",
+    "ticketType": "Premium",
+    "eventsAttended": ["Poetry Reading 2023", "Tech Hackathon 2024", "Artisan Market 2024"],
+    "contact": { "email": "edward@example.com", "phone": "777-777-7777" },
+    "preferences": ["Literature", "Art"]
+  },
+  {
+    "name": "Frank Ocean",
+    "ticketType": "Standard",
+    "eventsAttended": ["Music Concert 2024", "Science Fair 2024", "Book Signing 2024"],
+    "contact": { "email": "frank@example.com", "phone": "888-888-8888" },
+    "preferences": ["Music", "Science"]
+  },
+  {
+    "name": "Gary Oldman",
+    "ticketType": "Basic",
+    "eventsAttended": ["Fitness Expo 2024", "Art Gallery 2024", "Startup Summit 2024"],
+    "contact": { "email": "gary@example.com", "phone": "999-999-9999" },
+    "preferences": ["Fitness", "Entrepreneurship"]
+  },
+  {
+    "name": "Henry Cavill",
+    "ticketType": "Premium",
+    "eventsAttended": ["Wine Tasting 2024", "Yoga Workshop 2024", "Pet Adoption Event 2024"],
+    "contact": { "email": "henry@example.com", "phone": "222-222-2222" },
+    "preferences": ["Wine", "Wellness"]
+  },
+  {
+    "name": "Ian McKellen",
+    "ticketType": "Standard",
+    "eventsAttended": ["Cooking Masterclass 2024", "Marathon 2024", "Art Exhibition 2024"],
+    "contact": { "email": "ianm@example.com", "phone": "333-333-3333" },
+    "preferences": ["Cooking", "Fitness"]
+  },
+  {
+    "name": "Jack Nicholson",
+    "ticketType": "Basic",
+    "eventsAttended": ["Tech Meetup 2024", "Holiday Market 2024"],
+    "contact": { "email": "jack@example.com", "phone": "444-444-4444" },
+    "preferences": ["Technology", "Shopping"]
+  },
+  {
+    "name": "Kate Winslet",
+    "ticketType": "Premium",
+    "eventsAttended": ["Tech Conference 2023", "Music Festival 2023", "Art Exhibition 2023"],
+    "contact": { "email": "kate@example.com", "phone": "555-555-5555" },
+    "preferences": ["Technology", "Art"]
+  },
+  {
+    "name": "Leonardo DiCaprio",
+    "ticketType": "Standard",
+    "eventsAttended": ["Food Fair 2023", "Film Screening 2023", "Book Fair 2023"],
+    "contact": { "email": "leonardo@example.com", "phone": "666-666-6666" },
+    "preferences": ["Food", "Entertainment"]
+  },
+  {
+    "name": "Matt Damon",
+    "ticketType": "Basic",
+    "eventsAttended": ["Fashion Show 2023", "Science Fair 2023"],
+    "contact": { "email": "matt@example.com", "phone": "777-777-7777" },
+    "preferences": ["Fashion", "Science"]
+  },
+  {
+    "name": "Nicole Kidman",
+    "ticketType": "Premium",
+    "eventsAttended": ["Sports Day 2023", "Charity Gala 2023", "Comedy Night 2023"],
+    "contact": { "email": "nicole@example.com", "phone": "888-888-8888" },
+    "preferences": ["Sports", "Charity"]
+  },
+  {
+    "name": "Oscar Isaac",
+    "ticketType": "Standard",
+    "eventsAttended": ["Hackathon 2023", "Photography Workshop 2023", "Networking Event 2023"],
+    "contact": { "email": "oscar@example.com", "phone": "999-999-9999" },
+    "preferences": ["Coding", "Photography"]
+  },
+  {
+    "name": "Paul Rudd",
+    "ticketType": "Basic",
+    "eventsAttended": ["Startup Pitch 2023", "Wine Tasting 2023"],
+    "contact": { "email": "paul@example.com", "phone":     "222-222-2222" },
+    "preferences": ["Entrepreneurship", "Wine"]
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "ticketType": "Premium",
+    "eventsAttended": ["Yoga Retreat 2023", "Pet Adoption Day 2023", "Cooking Class 2023"],
+    "contact": { "email": "robert@example.com", "phone": "333-333-3333" },
+    "preferences": ["Wellness", "Pets"]
+  },
+  {
+    "name": "Scarlett Johansson",
+    "ticketType": "Standard",
+    "eventsAttended": ["Marathon 2023", "Art Workshop 2023", "Tech Meetup 2023"],
+    "contact": { "email": "scarlett@example.com", "phone": "444-444-4444" },
+    "preferences": ["Fitness", "Art"]
+  },
+  {
+    "name": "Tom Hanks",
+    "ticketType": "Basic",
+    "eventsAttended": ["Holiday Market 2023", "Dance Party 2023"],
+    "contact": { "email": "tom@example.com", "phone": "555-555-5555" },
+    "preferences": ["Shopping", "Music"]
+  },
+  {
+    "name": "Vin Diesel",
+    "ticketType": "Premium",
+    "eventsAttended": ["Business Summit 2023", "Film Festival 2023", "Science Expo 2023"],
+    "contact": { "email": "vin@example.com", "phone": "666-666-6666" },
+    "preferences": ["Business", "Science"]
+  },
+  {
+    "name": "X-Men Xavier",
+    "ticketType": "Standard",
+    "eventsAttended": ["Fitness Challenge 2023", "Art Auction 2023", "Music Workshop 2023"],
+    "contact": { "email": "xmen@example.com", "phone": "777-777-7777" },
+    "preferences": ["Fitness", "Art"]
+  },
+  {
+    "name": "Yoda Master",
+    "ticketType": "Basic",
+    "eventsAttended": ["Coding Bootcamp 2023", "Gardening Workshop 2023"],
+    "contact": { "email": "yoda@example.com", "phone": "888-888-8888" },
+    "preferences": ["Coding", "Nature"]
+  },
+  {
+    "name": "Zachary Quinto",
+    "ticketType": "Premium",
+    "eventsAttended": ["Poetry Reading 2023", "Tech Hackathon 2024", "Artisan Market 2024"],
+    "contact": { "email": "zachary@example.com", "phone": "999-999-9999" },
+    "preferences": ["Literature", "Art"]
+  }
+]

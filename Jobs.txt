@@ -1,0 +1,352 @@
+[
+  {
+    "jobTitle": "Software Engineer",
+    "company": "TechCorp",
+    "skillsRequired": ["Java", "Python", "SQL"],
+    "applicants": ["Alice Johnson", "Bob Smith", "Charlie Brown"],
+    "details": { "location": "New York", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Data Analyst",
+    "company": "DataWorks",
+    "skillsRequired": ["Excel", "SQL", "R"],
+    "applicants": ["Diana Prince", "Edward Norton"],
+    "details": { "location": "San Francisco", "salary": 75000 }
+  },
+  {
+    "jobTitle": "Product Manager",
+    "company": "Innovate Inc.",
+    "skillsRequired": ["Agile", "Leadership", "Communication"],
+    "applicants": ["Fiona Gallagher", "George Lucas", "Hannah Montana"],
+    "details": { "location": "Chicago", "salary": 100000 }
+  },
+  {
+    "jobTitle": "DevOps Engineer",
+    "company": "CloudNet",
+    "skillsRequired": ["AWS", "Docker", "Kubernetes"],
+    "applicants": ["Ian Somerhalder", "Julia Roberts"],
+    "details": { "location": "Seattle", "salary": 110000 }
+  },
+  {
+    "jobTitle": "Marketing Specialist",
+    "company": "AdvertiseMe",
+    "skillsRequired": ["SEO", "Content Writing", "Social Media"],
+    "applicants": ["Kevin Hart", "Liam Neeson"],
+    "details": { "location": "Los Angeles", "salary": 65000 }
+  },
+  {
+    "jobTitle": "Frontend Developer",
+    "company": "WebDesign Co.",
+    "skillsRequired": ["HTML", "CSS", "JavaScript"],
+    "applicants": ["Megan Fox", "Natalie Portman"],
+    "details": { "location": "Austin", "salary": 80000 }
+  },
+  {
+    "jobTitle": "Backend Developer",
+    "company": "ServerLogic",
+    "skillsRequired": ["Node.js", "Express", "MongoDB"],
+    "applicants": ["Oscar Wilde", "Peter Parker"],
+    "details": { "location": "Dallas", "salary": 85000 }
+  },
+  {
+    "jobTitle": "Full Stack Developer",
+    "company": "CodeCraft",
+    "skillsRequired": ["React", "Node.js", "SQL"],
+    "applicants": ["Quincy Jones", "Rachel Green"],
+    "details": { "location": "Miami", "salary": 95000 }
+  },
+  {
+    "jobTitle": "UI/UX Designer",
+    "company": "PixelPerfect",
+    "skillsRequired": ["Figma", "Sketch", "Adobe XD"],
+    "applicants": ["Samuel Jackson", "Taylor Swift"],
+    "details": { "location": "Boston", "salary": 70000 }
+  },
+  {
+    "jobTitle": "Cybersecurity Analyst",
+    "company": "SecureNet",
+    "skillsRequired": ["Ethical Hacking", "Firewalls", "Encryption"],
+    "applicants": ["Uma Thurman", "Vin Diesel"],
+    "details": { "location": "Washington DC", "salary": 100000 }
+  },
+  {
+    "jobTitle": "Cloud Architect",
+    "company": "CloudSolutions",
+    "skillsRequired": ["AWS", "Azure", "Google Cloud"],
+    "applicants": ["Will Smith", "Xavier Hall"],
+    "details": { "location": "San Jose", "salary": 120000 }
+  },
+  {
+    "jobTitle": "Business Analyst",
+    "company": "BizLogic",
+    "skillsRequired": ["Requirements Gathering", "Process Mapping", "JIRA"],
+    "applicants": ["Yara Greyjoy", "Zoe Saldana"],
+    "details": { "location": "Philadelphia", "salary": 85000 }
+  },
+  {
+    "jobTitle": "HR Manager",
+    "company": "PeopleFirst",
+    "skillsRequired": ["Recruitment", "Employee Relations", "Performance Management"],
+    "applicants": ["Adam Levine", "Blake Shelton"],
+    "details": { "location": "Houston", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Sales Executive",
+    "company": "RevenueMax",
+    "skillsRequired": ["Negotiation", "CRM", "Cold Calling"],
+    "applicants": ["Carrie Underwood", "David Beckham"],
+    "details": { "location": "Denver", "salary": 70000 }
+  },
+  {
+    "jobTitle": "Graphic Designer",
+    "company": "Artistic Minds",
+    "skillsRequired": ["Photoshop", "Illustrator", "Typography"],
+    "applicants": ["Eva Mendes", "Frank Sinatra"],
+    "details": { "location": "Portland", "salary": 65000 }
+  },
+  {
+    "jobTitle": "Mobile App Developer",
+    "company": "AppWorks",
+    "skillsRequired": ["Swift", "Kotlin", "Flutter"],
+    "applicants": ["Grace Kelly", "Henry Cavill"],
+    "details": { "location": "San Diego", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Network Engineer",
+    "company": "NetConnect",
+    "skillsRequired": ["Routing", "Switching", "TCP/IP"],
+    "applicants": ["Idris Elba", "Jennifer Aniston"],
+    "details": { "location": "Atlanta", "salary": 85000 }
+  },
+  {
+    "jobTitle": "QA Engineer",
+    "company": "Testify",
+    "skillsRequired": ["Manual Testing", "Automation", "Selenium"],
+    "applicants": ["Keanu Reeves", "Leonardo DiCaprio"],
+    "details": { "location": "Phoenix", "salary": 75000 }
+  },
+  {
+    "jobTitle": "AI Researcher",
+    "company": "DeepMind",
+    "skillsRequired": ["Machine Learning", "Neural Networks", "TensorFlow"],
+    "applicants": ["Meryl Streep", "Nicole Kidman"],
+    "details": { "location": "Palo Alto", "salary": 130000 }
+  },
+  {
+    "jobTitle": "Game Developer",
+    "company": "FunGames",
+    "skillsRequired": ["Unity", "C#", "Game Design"],
+    "applicants": ["Orlando Bloom", "Penelope Cruz"],
+    "details": { "location": "Las Vegas", "salary": 80000 }
+  },
+  {
+    "jobTitle": "Financial Analyst",
+    "company": "MoneyMatters",
+    "skillsRequired": ["Excel", "Financial Modeling", "Forecasting"],
+    "applicants": ["Robert Downey Jr.", "Scarlett Johansson"],
+    "details": { "location": "Charlotte", "salary": 85000 }
+  },
+  {
+    "jobTitle": "Technical Writer",
+    "company": "DocuPro",
+    "skillsRequired": ["Documentation", "API Writing", "Markdown"],
+    "applicants": ["Tom Cruise", "Usher Raymond"],
+    "details": { "location": "Nashville", "salary": 70000 }
+  },
+  {
+    "jobTitle": "Supply Chain Manager",
+    "company": "LogisticsCo",
+    "skillsRequired": ["Inventory Management", "Procurement", "ERP Systems"],
+    "applicants": ["Victoria Beckham", "Wesley Snipes"],
+    "details": { "location": "Minneapolis", "salary": 95000 }
+  },
+  {
+    "jobTitle": "Data Scientist",
+    "company": "Insightful",
+    "skillsRequired": ["Python", "Pandas", "Scikit-Learn"],
+    "applicants": ["X-Men Wolverine", "Yara Greyjoy"],
+    "details": { "location": "Detroit", "salary": 110000 }
+  },
+  {
+    "jobTitle": "Operations Manager",
+    "company": "OperateNow",
+    "skillsRequired": ["Project Management", "Budgeting", "Team Leadership"],
+    "applicants": ["Zoe Saldana", "Adam Levine"],
+    "details": { "location": "Cleveland", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Digital Marketing Manager",
+    "company": "ClickBoost",
+    "skillsRequired": ["PPC", "Email Marketing", "Analytics"],
+    "applicants": ["Blake Shelton", "Carrie Underwood"],
+    "details": { "location": "Tampa", "salary": 85000 }
+  },
+  {
+    "jobTitle": "IT Support Specialist",
+    "company": "HelpDesk Pro",
+    "skillsRequired": ["Troubleshooting", "Networking", "Hardware"],
+    "applicants": ["David Beckham", "Eva Mendes"],
+    "details": { "location": "Sacramento", "salary": 60000 }
+  },
+  {
+    "jobTitle": "Blockchain Developer",
+    "company": "ChainLogic",
+    "skillsRequired": ["Solidity", "Smart Contracts", "Ethereum"],
+    "applicants": ["Frank Sinatra", "Grace Kelly"],
+    "details": { "location": "Salt Lake City", "salary": 100000 }
+  },
+  {
+    "jobTitle": "Robotics Engineer",
+    "company": "RoboTech",
+    "skillsRequired": ["Mechanical Design", "Programming", "AI"],
+    "applicants": ["Henry Cavill", "Idris Elba"],
+    "details": { "location": "Kansas City", "salary": 110000 }
+  },
+  {
+    "jobTitle": "Environmental Engineer",
+    "company": "EcoNova",
+    "skillsRequired": ["Waste Management", "Pollution Control", "Sustainability"],
+    "applicants": ["Jennifer Aniston", "Keanu Reeves"],
+    "details": { "location": "Milwaukee", "salary": 85000 }
+  },
+  {
+    "jobTitle": "Legal Advisor",
+    "company": "LawFirm",
+    "skillsRequired": ["Contract Law", "Corporate Law", "Litigation"],
+    "applicants": ["Leonardo DiCaprio", "Meryl Streep"],
+    "details": { "location": "St. Louis", "salary": 120000 }
+  },
+  {
+    "jobTitle": "Public Relations Specialist",
+    "company": "MediaMinds",
+    "skillsRequired": ["Press Releases", "Media Relations", "Crisis Management"],
+    "applicants": ["Nicole Kidman", "Orlando Bloom"],
+    "details": { "location": "Baltimore", "salary": 75000 }
+  },
+  {
+    "jobTitle": "Event Planner",
+    "company": "EventPros",
+    "skillsRequired": ["Event Coordination", "Budgeting", "Vendor Management"],
+    "applicants": ["Penelope Cruz", "Robert Downey Jr."],
+    "details": { "location": "Memphis", "salary": 70000 }
+  },
+  {
+    "jobTitle": "Customer Success Manager",
+    "company": "ClientCare",
+    "skillsRequired": ["Onboarding", "Retention", "CRM Tools"],
+    "applicants": ["Scarlett Johansson", "Tom Cruise"],
+    "details": { "location": "Louisville", "salary": 80000 }
+  },
+  {
+    "jobTitle": "Content Strategist",
+    "company": "ContentHub",
+    "skillsRequired": ["Content Planning", "SEO", "Copywriting"],
+    "applicants": ["Usher Raymond", "Victoria Beckham"],
+    "details": { "location": "Jacksonville", "salary": 75000 }
+  },
+  {
+    "jobTitle": "Architect",
+    "company": "BuildPro",
+    "skillsRequired": ["AutoCAD", "Revit", "Construction Management"],
+    "applicants": ["Wesley Snipes", "X-Men Wolverine"],
+    "details": { "location": "Indianapolis", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Biomedical Engineer",
+    "company": "MedTech",
+    "skillsRequired": ["Medical Devices", "Prototyping", "Regulatory Compliance"],
+    "applicants": ["Yara Greyjoy", "Zoe Saldana"],
+    "details": { "location": "Columbus", "salary": 100000 }
+  },
+  {
+    "jobTitle": "Instructional Designer",
+    "company": "LearnEasy",
+    "skillsRequired": ["E-learning", "Storyline", "Curriculum Development"],
+    "applicants": ["Adam Levine", "Blake Shelton"],
+    "details": { "location": "San Antonio", "salary": 75000 }
+  },
+  {
+    "jobTitle": "Petroleum Engineer",
+    "company": "OilCorp",
+    "skillsRequired": ["Drilling", "Reservoir Engineering", "Simulation Software"],
+    "applicants": ["Carrie Underwood", "David Beckham"],
+    "details": { "location": "Oklahoma City", "salary": 110000 }
+  },
+  {
+    "jobTitle": "Electrical Engineer",
+    "company": "PowerGrid",
+    "skillsRequired": ["Circuit Design", "PLC Programming", "MATLAB"],
+    "applicants": ["Eva Mendes", "Frank Sinatra"],
+    "details": { "location": "Albuquerque", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Aerospace Engineer",
+    "company": "SkyTech",
+    "skillsRequired": ["Aerodynamics", "Structural Analysis", "Simulations"],
+    "applicants": ["Grace Kelly", "Henry Cavill"],
+    "details": { "location": "Honolulu", "salary": 100000 }
+  },
+  {
+    "jobTitle": "Civil Engineer",
+    "company": "BridgeBuilders",
+    "skillsRequired": ["Structural Design", "Surveying", "Project Management"],
+    "applicants": ["Idris Elba", "Jennifer Aniston"],
+    "details": { "location": "Buffalo", "salary": 85000 }
+  },
+  {
+    "jobTitle": "Chemical Engineer",
+    "company": "ChemWorks",
+    "skillsRequired": ["Process Design", "Thermodynamics", "Lab Testing"],
+    "applicants": ["Keanu Reeves", "Leonardo DiCaprio"],
+    "details": { "location": "Raleigh", "salary": 95000 }
+  },
+  {
+    "jobTitle": "Industrial Designer",
+    "company": "DesignCo",
+    "skillsRequired": ["3D Modeling", "Prototyping", "User-Centered Design"],
+    "applicants": ["Meryl Streep", "Nicole Kidman"],
+    "details": { "location": "Omaha", "salary": 80000 }
+  },
+  {
+    "jobTitle": "Marine Biologist",
+    "company": "OceanLife",
+    "skillsRequired": ["Ecology", "Conservation", "Field Research"],
+    "applicants": ["Orlando Bloom", "Penelope Cruz"],
+    "details": { "location": "Virginia Beach", "salary": 85000 }
+  },
+  {
+    "jobTitle": "Pharmacist",
+    "company": "HealthPlus",
+    "skillsRequired": ["Medication Dispensing", "Patient Counseling", "Drug Knowledge"],
+    "applicants": ["Robert Downey Jr.", "Scarlett Johansson"],
+    "details": { "location": "Spokane", "salary": 90000 }
+  },
+  {
+    "jobTitle": "Veterinarian",
+    "company": "PetCare",
+    "skillsRequired": ["Animal Surgery", "Diagnosis", "Vaccinations"],
+    "applicants": ["Tom Cruise", "Usher Raymond"],
+    "details": { "location": "Des Moines", "salary": 95000 }
+  },
+  {
+    "jobTitle": "Librarian",
+    "company": "BookWorld",
+    "skillsRequired": ["Cataloging", "Research Assistance", "Digital Archives"],
+    "applicants": ["Victoria Beckham", "Wesley Snipes"],
+    "details": { "location": "Tucson", "salary": 60000 }
+  },
+  {
+    "jobTitle": "Real Estate Agent",
+    "company": "HomeSales",
+    "skillsRequired": ["Property Listings", "Negotiation", "Market Analysis"],
+    "applicants": ["X-Men Wolverine", "Yara Greyjoy"],
+    "details": { "location": "Fresno", "salary": 70000 }
+  },
+  {
+    "jobTitle": "Travel Agent",
+    "company": "GlobeTrotters",
+    "skillsRequired": ["Itinerary Planning", "Booking", "Customer Service"],
+    "applicants": ["Zoe Saldana", "Adam Levine"],
+    "details": { "location": "El Paso", "salary": 65000 }
+  }
+]

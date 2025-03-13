@@ -1,0 +1,345 @@
+[
+  {
+    "name": "Alice Johnson",
+    "subscriptionType": "Premium",
+    "playlists": ["Bohemian Rhapsody", "Stairway to Heaven", "Hotel California"],
+    "contact": { "email": "alice@example.com", "phone": "123-456-7890" },
+    "preferences": ["Rock", "Classic Rock"]
+  },
+  {
+    "name": "Bob Smith",
+    "subscriptionType": "Standard",
+    "playlists": ["Imagine", "Hey Jude", "Like a Rolling Stone", "Smells Like Teen Spirit"],
+    "contact": { "email": "bob@example.com", "phone": "987-654-3210" },
+    "preferences": ["Pop", "Rock"]
+  },
+  {
+    "name": "Charlie Brown",
+    "subscriptionType": "Basic",
+    "playlists": ["Sweet Child O' Mine", "Billie Jean"],
+    "contact": { "email": "charlie@example.com", "phone": "555-555-5555" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Diana Prince",
+    "subscriptionType": "Premium",
+    "playlists": ["I Will Always Love You", "Rolling in the Deep", "Shape of You"],
+    "contact": { "email": "diana@example.com", "phone": "111-222-3333" },
+    "preferences": ["Pop", "Soul"]
+  },
+  {
+    "name": "Ethan Hunt",
+    "subscriptionType": "Standard",
+    "playlists": ["Despacito", "Uptown Funk", "Blinding Lights"],
+    "contact": { "email": "ethan@example.com", "phone": "444-444-4444" },
+    "preferences": ["Latin Pop", "Funk"]
+  },
+  {
+    "name": "Fiona Gallagher",
+    "subscriptionType": "Basic",
+    "playlists": ["Old Town Road", "Bad Guy"],
+    "contact": { "email": "fiona@example.com", "phone": "666-666-6666" },
+    "preferences": ["Country Rap", "Electropop"]
+  },
+  {
+    "name": "George Lucas",
+    "subscriptionType": "Premium",
+    "playlists": ["Someone Like You", "Halo", "Thinking Out Loud"],
+    "contact": { "email": "george@example.com", "phone": "777-777-7777" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Hannah Montana",
+    "subscriptionType": "Standard",
+    "playlists": ["All of Me", "Shallow", "Perfect"],
+    "contact": { "email": "hannah@example.com", "phone": "888-888-8888" },
+    "preferences": ["Pop", "Romantic"]
+  },
+  {
+    "name": "Ian Fleming",
+    "subscriptionType": "Basic",
+    "playlists": ["Love Story", "You Belong With Me"],
+    "contact": { "email": "ian@example.com", "phone": "999-999-9999" },
+    "preferences": ["Pop", "Country"]
+  },
+  {
+    "name": "Julia Roberts",
+    "subscriptionType": "Premium",
+    "playlists": ["Blank Space", "Shake It Off", "Bad Blood"],
+    "contact": { "email": "julia@example.com", "phone": "222-222-2222" },
+    "preferences": ["Pop"]
+  },
+  {
+    "name": "Kevin Hart",
+    "subscriptionType": "Standard",
+    "playlists": ["Hello", "Sorry", "Can't Stop the Feeling!"],
+    "contact": { "email": "kevin@example.com", "phone": "333-333-3333" },
+    "preferences": ["Pop", "Dance"]
+  },
+  {
+    "name": "Liam Neeson",
+    "subscriptionType": "Basic",
+    "playlists": ["Happy", "Counting Stars", "Radioactive"],
+    "contact": { "email": "liam@example.com", "phone": "444-444-4444" },
+    "preferences": ["Pop", "Alternative"]
+  },
+  {
+    "name": "Megan Fox",
+    "subscriptionType": "Premium",
+    "playlists": ["Closer", "Starboy", "Work"],
+    "contact": { "email": "megan@example.com", "phone": "555-555-5555" },
+    "preferences": ["Pop", "EDM"]
+  },
+  {
+    "name": "Nina Dobrev",
+    "subscriptionType": "Standard",
+    "playlists": ["Levitating", "Peaches", "Stay"],
+    "contact": { "email": "nina@example.com", "phone": "666-666-6666" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Oliver Queen",
+    "subscriptionType": "Basic",
+    "playlists": ["As It Was", "Anti-Hero", "Unholy"],
+    "contact": { "email": "oliver@example.com", "phone": "777-777-7777" },
+    "preferences": ["Pop", "Indie Pop"]
+  },
+  {
+    "name": "Peter Parker",
+    "subscriptionType": "Premium",
+    "playlists": ["Flowers", "Calm Down"],
+    "contact": { "email": "peter@example.com", "phone": "888-888-8888" },
+    "preferences": ["Pop", "Afrobeats"]
+  },
+  {
+    "name": "Quinn Fabray",
+    "subscriptionType": "Standard",
+    "playlists": ["Bohemian Rhapsody", "Stairway to Heaven", "Hotel California"],
+    "contact": { "email": "quinn@example.com", "phone": "999-999-9999" },
+    "preferences": ["Rock", "Classic Rock"]
+  },
+  {
+    "name": "Rachel Green",
+    "subscriptionType": "Basic",
+    "playlists": ["Imagine", "Hey Jude", "Like a Rolling Stone"],
+    "contact": { "email": "rachel@example.com", "phone": "222-222-2222" },
+    "preferences": ["Pop", "Rock"]
+  },
+  {
+    "name": "Sam Winchester",
+    "subscriptionType": "Premium",
+    "playlists": ["Sweet Child O' Mine", "Billie Jean", "I Will Always Love You"],
+    "contact": { "email": "sam@example.com", "phone": "333-333-3333" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Taylor Swift",
+    "subscriptionType": "Standard",
+    "playlists": ["Despacito", "Uptown Funk", "Blinding Lights"],
+    "contact": { "email": "taylor@example.com", "phone": "444-444-4444" },
+    "preferences": ["Latin Pop", "Funk"]
+  },
+  {
+    "name": "Uma Thurman",
+    "subscriptionType": "Basic",
+    "playlists": ["Old Town Road", "Bad Guy", "Someone Like You"],
+    "contact": { "email": "uma@example.com", "phone": "555-555-5555" },
+    "preferences": ["Country Rap", "Electropop"]
+  },
+  {
+    "name": "Victor Creed",
+    "subscriptionType": "Premium",
+    "playlists": ["Halo", "Thinking Out Loud", "All of Me"],
+    "contact": { "email": "victor@example.com", "phone": "666-666-6666" },
+    "preferences": ["Pop", "Romantic"]
+  },
+  {
+    "name": "Wade Wilson",
+    "subscriptionType": "Standard",
+    "playlists": ["Shallow", "Perfect", "Love Story"],
+    "contact": { "email": "wade@example.com", "phone": "777-777-7777" },
+    "preferences": ["Pop", "Country"]
+  },
+  {
+    "name": "Xavier Charles",
+    "subscriptionType": "Basic",
+    "playlists": ["You Belong With Me", "Blank Space", "Shake It Off"],
+    "contact": { "email": "xavier@example.com", "phone": "888-888-8888" },
+    "preferences": ["Pop"]
+  },
+  {
+    "name": "Yara Greyjoy",
+    "subscriptionType": "Premium",
+    "playlists": ["Bad Blood", "Hello", "Sorry"],
+    "contact": { "email": "yara@example.com", "phone": "999-999-9999" },
+    "preferences": ["Pop", "Dance"]
+  },
+  {
+    "name": "Zoe Saldana",
+    "subscriptionType": "Standard",
+    "playlists": ["Can't Stop the Feeling!", "Happy", "Counting Stars"],
+    "contact": { "email": "zoe@example.com", "phone": "222-222-2222" },
+    "preferences": ["Pop", "Alternative"]
+  },
+  {
+    "name": "Adam Levine",
+    "subscriptionType": "Basic",
+    "playlists": ["Radioactive", "Closer", "Starboy"],
+    "contact": { "email": "adam@example.com", "phone": "333-333-3333" },
+    "preferences": ["Pop", "EDM"]
+  },
+  {
+    "name": "Blake Shelton",
+    "subscriptionType": "Premium",
+    "playlists": ["Work", "Levitating", "Peaches"],
+    "contact": { "email": "blake@example.com", "phone": "444-444-4444" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Chris Evans",
+    "subscriptionType": "Standard",
+    "playlists": ["Stay", "As It Was", "Anti-Hero"],
+    "contact": { "email": "chris@example.com", "phone": "555-555-5555" },
+    "preferences": ["Pop", "Indie Pop"]
+  },
+  {
+    "name": "Dwayne Johnson",
+    "subscriptionType": "Basic",
+    "playlists": ["Unholy", "Flowers", "Calm Down"],
+    "contact": { "email": "dwayne@example.com", "phone": "666-666-6666" },
+    "preferences": ["Pop", "Afrobeats"]
+  },
+  {
+    "name": "Edward Norton",
+    "subscriptionType": "Premium",
+    "playlists": ["Bohemian Rhapsody", "Stairway to Heaven", "Hotel California"],
+    "contact": { "email": "edward@example.com", "phone": "777-777-7777" },
+    "preferences": ["Rock", "Classic Rock"]
+  },
+  {
+    "name": "Frank Ocean",
+    "subscriptionType": "Standard",
+    "playlists": ["Imagine", "Hey Jude", "Like a Rolling Stone"],
+    "contact": { "email": "frank@example.com", "phone": "888-888-8888" },
+    "preferences": ["Pop", "Rock"]
+  },
+  {
+    "name": "Gary Oldman",
+    "subscriptionType": "Basic",
+    "playlists": ["Sweet Child O' Mine", "Billie Jean", "I Will Always Love You"],
+    "contact": { "email": "gary@example.com", "phone": "999-999-9999" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Henry Cavill",
+    "subscriptionType": "Premium",
+    "playlists": ["Despacito", "Uptown Funk", "Blinding Lights"],
+    "contact": { "email": "henry@example.com", "phone": "222-222-2222" },
+    "preferences": ["Latin Pop", "Funk"]
+  },
+  {
+    "name": "Ian McKellen",
+    "subscriptionType": "Standard",
+    "playlists": ["Old Town Road", "Bad Guy", "Someone Like You"],
+    "contact": { "email": "ianm@example.com", "phone": "333-333-3333" },
+    "preferences": ["Country Rap", "Electropop"]
+  },
+  {
+    "name": "Jack Nicholson",
+    "subscriptionType": "Basic",
+    "playlists": ["Halo", "Thinking Out Loud", "All of Me"],
+    "contact": { "email": "jack@example.com", "phone": "444-444-4444" },
+    "preferences": ["Pop", "Romantic"]
+  },
+  {
+    "name": "Kate Winslet",
+    "subscriptionType": "Premium",
+    "playlists": ["Shallow", "Perfect", "Love Story"],
+    "contact": { "email": "kate@example.com", "phone": "555-555-5555" },
+    "preferences": ["Pop", "Country"]
+  },
+  {
+    "name": "Leonardo DiCaprio",
+    "subscriptionType": "Standard",
+    "playlists": ["You Belong With Me", "Blank Space", "Shake It Off"],
+    "contact": { "email": "leonardo@example.com", "phone": "666-666-6666" },
+    "preferences": ["Pop"]
+  },
+  {
+    "name": "Matt Damon",
+    "subscriptionType": "Basic",
+    "playlists": ["Bad Blood", "Hello", "Sorry"],
+    "contact": { "email": "matt@example.com", "phone": "777-777-7777" },
+    "preferences": ["Pop", "Dance"]
+  },
+  {
+    "name": "Nicole Kidman",
+    "subscriptionType": "Premium",
+    "playlists": ["Can't Stop the Feeling!", "Happy", "Counting Stars"],
+    "contact": { "email": "nicole@example.com", "phone": "888-888-8888" },
+    "preferences": ["Pop", "Alternative"]
+  },
+  {
+    "name": "Oscar Isaac",
+    "subscriptionType": "Standard",
+    "playlists": ["Radioactive", "Closer", "Starboy"],
+    "contact": { "email": "oscar@example.com", "phone": "999-999-9999" },
+    "preferences": ["Pop", "EDM"]
+  },
+  {
+    "name": "Paul Rudd",
+    "subscriptionType": "Basic",
+    "playlists": ["Work", "Levitating", "Peaches"],
+    "contact": { "email": "paul@example.com", "phone": "222-222-2222" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Robert Downey Jr.",
+    "subscriptionType": "Premium",
+    "playlists": ["Stay", "As It Was", "Anti-Hero"],
+    "contact": { "email": "robert@example.com", "phone": "333-333-3333" },
+    "preferences": ["Pop", "Indie Pop"]
+  },
+  {
+    "name": "Scarlett Johansson",
+    "subscriptionType": "Standard",
+    "playlists": ["Unholy", "Flowers", "Calm Down"],
+    "contact": { "email": "scarlett@example.com", "phone": "444-444-4444" },
+    "preferences": ["Pop", "Afrobeats"]
+  },
+  {
+    "name": "Tom Hanks",
+    "subscriptionType": "Basic",
+    "playlists": ["Bohemian Rhapsody", "Stairway to Heaven", "Hotel California"],
+    "contact": { "email": "tom@example.com", "phone": "555-555-5555" },
+    "preferences": ["Rock", "Classic Rock"]
+  },
+  {
+    "name": "Vin Diesel",
+    "subscriptionType": "Premium",
+    "playlists": ["Imagine", "Hey Jude", "Like a Rolling Stone"],
+    "contact": { "email": "vin@example.com", "phone": "666-666-6666" },
+    "preferences": ["Pop", "Rock"]
+  },
+  {
+    "name": "X-Men Xavier",
+    "subscriptionType": "Standard",
+    "playlists": ["Sweet Child O' Mine", "Billie Jean", "I Will Always Love You"],
+    "contact": { "email": "xmen@example.com", "phone": "777-777-7777" },
+    "preferences": ["Pop", "R&B"]
+  },
+  {
+    "name": "Yoda Master",
+    "subscriptionType": "Basic",
+    "playlists": ["Despacito", "Uptown Funk", "Blinding Lights"],
+    "contact": { "email": "yoda@example.com", "phone": "888-888-8888" },
+    "preferences": ["Latin Pop", "Funk"]
+  },
+  {
+    "name": "Zachary Quinto",
+    "subscriptionType": "Premium",
+    "playlists": ["Old Town Road", "Bad Guy", "Someone Like You"],
+    "contact": { "email": "zachary@example.com", "phone": "999-999-9999" },
+    "preferences": ["Country Rap", "Electropop"]
+  }
+]
